@@ -1,0 +1,25 @@
+
+.largeBackgroundImg
+{
+  background: url('../Images/notificationBg.png');
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.largeBackgroundImgContainer
+{
+  height: 100%;
+  text-align: center;
+  /* background: green; */
+  width:96%;
+  margin: auto; 
+}
+
+.backgroundFullScreen
+{
+  /* background: red; */
+  height: 100vh;
+  background: url('../Images/loginBackground.jpg'); 
+}

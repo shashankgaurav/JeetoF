@@ -1,0 +1,123 @@
+.FTUPlayNowWrapper{
+background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.FTUPlayNowPanel{
+    padding: 3% 13% 0 13%;
+    height: 90%;
+    width: 73%;
+    background: url('../Images/About_bg.png');
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    background-repeat: no-repeat;
+}
+.FTUPlayNowDivWrapper{
+    height: 95%;
+}
+.playText{
+    color: #FFF;
+    font-size: 2.9em;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+.FTUPlayNowCardDivWrapper{
+    height: 60%;
+    width:100%;
+}
+.FTUPlayCard{
+    height: 100%;
+    background:url('../Images/Single-player-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 5% 0 0;
+    width: 45%;
+    float: left;
+}
+.FTUPlayGameCard{
+    height: 100%;
+    background: url('../Images/Jeeto-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 0 5%;
+    width: 45%;
+    float: left;
+}
+.FTUPlayNowButtonPanel{
+    width: 80%;
+    margin: 7% auto;
+    height: 9%;
+
+}
+.FTUPlayNowButtonPanel .answerButtonText{
+    font-size: 3.6em;
+    padding: 0;
+    text-transform: uppercase;
+}
+  /* *************media rules for 1366 resolutions****************/
+    @media only screen and (max-width: 1366px) {
+        .FTUPlayCard{
+           background:url('../Images/Single-player-min.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0 5% 0 0;
+            width: 45%;
+            float: left;
+        }
+        .FTUPlayNowButtonPanel .answerButtonText {
+            font-size: 2.6em;
+            padding: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .FTUPlayGameCard{
+            height: 100%;
+            background: url('../Images/Jeeto-min.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0 0 0 5%;
+            width: 45%;
+            float: left;
+            padding: 15% 0 0 0;
+            text-align: center;
+            position: relative;
+        }
+        .FTUcardRuppes{
+            color: #ffff00;
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 1px 3px 1px #000;
+            font-family: sans-serif
+        }
+        .FTUPcardPlayers{
+             color: #ffff00;
+             font-size: 2em;
+             text-shadow: 1px 3px 1px #000;
+             font-family: sans-serif;
+                 font-weight: bold;
+         }
+        .FTUPcardWinner{
+
+        }
+        .FTUPcardPlayer{
+            
+        }
+        .FTUPlayGameCard .questionButton {
+            background: url('../Images/QuestionMarkIcon.png');
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            background-size: contain;
+            right: -5%;
+            bottom: -3%;
+            cursor: pointer;
+        }
+    }

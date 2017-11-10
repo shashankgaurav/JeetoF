@@ -1,0 +1,24 @@
+.roomSelectionMainView{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: green;
+}
+.roomSelectionTopView{
+  width: 100%;
+  height: 20%;
+  background-color: red;
+}
+
+.buttons{
+  position: relaive;
+}
+.roomSelect{
+      overflow: hidden;
+}
+.roomSelectionCardpanel{
+        height: 80%;
+    position: absolute;
+    width: 100%;
+    top: 14%;
+}

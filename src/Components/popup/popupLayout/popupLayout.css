@@ -1,0 +1,35 @@
+.introPopupContainer{
+      position: absolute;
+    height: 80%;
+    width: 80%;
+    background: red;
+    top: 10%;
+    left: 10%;
+
+}
+.popupLayoutContainer{
+  padding: 1% 0 0 0;
+      position: absolute;
+    height: 80%;
+    width: 80%;
+    background: url('./images/signUp.png');
+    top: 10%;
+    left: 10%;
+     background-position: center;
+    background-size: 100% 100%;
+
+}
+
+.termsAndCondition{
+    height: 50px;
+    width: 100%;
+    margin: 3% auto;
+}
+.jitoMoneyLogo{
+    width: 370px;
+    height: 264px;
+    margin: auto;
+    background: url('./images/jitoMoney.png');
+    background-position: center;
+    background-size: 100% 100%;
+}

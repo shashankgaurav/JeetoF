@@ -1,0 +1,89 @@
+.NotificationBgScreen{
+  background: url('../Images/loginBackground.jpg');
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* .notificationContainer
+{
+  background: url('../Images/large_bg.png') no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: contain ;
+  background: green;
+  width:75%;
+  margin: auto;
+} */
+
+.notificationBackground
+{
+  background: url('../Images/large_bg.png') no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: contain ;
+  width:100%;
+  margin: auto;
+  padding: 0%;
+}
+
+.notificationHeader
+{
+  height: 15%;
+  padding-top:2%;
+  margin: auto;
+}
+
+.allNotifications
+{
+  /* background: red; */
+  height: 830px;
+  overflow: scroll;
+  padding: 2% 0% 0 5%;
+  margin: 0%;
+  text-align: center;
+  overflow-y:auto;
+}
+
+.notificationTitle
+{
+  /* background: red;  */
+  text-align: left;
+  font-weight: bold;
+  font-size:1.7em;
+  color: white;
+  /* margin: 0 0 0 5%; */
+  padding:1% 0 0 15%;
+}
+
+.notificationTime
+{
+  /* background: green; */
+  text-align: left;
+  font-weight: bold;
+  font-size:1.7em;
+  color: white;
+  margin: auto;
+  padding-top:1%;
+}
+
+.transparent_bg
+{
+  background: url('../Images/notificationTranceperantBg.png') no-repeat;
+  height: 8%;
+  width: 95%;
+  background-size: center ;
+  /* background: red; */
+  padding: 0% 0% 0% 0%;
+  margin: 1% 0 1% 0%;
+  background-size:contain;
+  background-position: center, center;
+}
+
+.notificationBackBtn
+{
+  text-align: left;
+  padding: 0 0 0 5%;
+}

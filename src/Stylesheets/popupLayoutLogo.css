@@ -1,0 +1,36 @@
+.jitoMoneyLogoContainer{
+    height: 100%;
+}
+
+.jitoMoneyLogo{
+      width: 250px;
+    height: 230px;
+    margin: auto;
+    background: url('../Images/jito_money_logo.png');
+    background-position: center;
+       background-size: 100% 80%;
+    background-repeat: no-repeat;
+}
+.facebookWrapper{
+
+}
+.facebookIconWrapper{
+    float: left;
+    width: 30%;
+}
+.facebookText{
+    float: left;
+    width: 70%;
+}
+ @media only screen and (max-width: 1366px) {
+    .jitoMoneyLogo{
+   width: 180px;
+    height: 151px;
+    margin: auto;
+    background: url('../Images/jito_money_logo.png');
+    background-position: center;
+       background-size: 100% 80%;
+    background-repeat: no-repeat;
+}
+
+}

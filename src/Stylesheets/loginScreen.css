@@ -1,0 +1,50 @@
+
+.loginScreen{
+        background: url('../Images/loginBackground.jpg');
+     width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.loginTab{
+height: 200px;
+}
+/*
+.jitoMoneyLogo{
+        width: 370px;
+    height: 330px;
+    margin: auto;
+    background: url('../Images/jitoMoney.png');
+    background-position: center;
+    background-size: 100% 100%;
+}*/
+.facebook{
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    background: url('../Images/facebook.png');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+.middleScreen{
+      width: 80vw;
+    height: 80vh;
+    margin: auto;
+    /* display: table-cell; */
+    position: relative;
+    top: 10%;   
+}
+.forgotPassword{
+    color: yellow;
+    font-size: 1.2em;
+}
+.forgotPassword:hover{
+    text-decoration: none;
+}
+.socialLoginText p{
+    float: left;
+}
+

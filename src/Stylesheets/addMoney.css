@@ -1,0 +1,194 @@
+.addMoneyPopupContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    /* padding: 5% 0% 0% 0%; */
+}
+
+.addMoneyPopupView {
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    background: url('../Images/popupBg.png') center no-repeat;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+}
+
+.addMoneyCloseBtnView {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 11%;
+    top: 2%;
+}
+
+.addMoneyCloseImg {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.addMoneyErrorText {
+    padding: 20%;
+    color: #fff;
+}
+
+.addMoneyMainDiv {
+    height: 100%;
+    width: 100%;
+}
+
+.addMoneyInnerDiv {
+    height: 100%;
+    width: 100%;
+    padding: 3% 0% 3% 0%;
+}
+
+.addMoneyTopDiv {
+    height: 20%;
+    width: 100%;
+    padding: 1% 25% 1% 25%;
+}
+
+.AddMoneyTitleImg {
+    height: 100%;
+    width: 100%;
+}
+
+.addMoneyMiddleDiv {
+    height: 40%;
+    width: 100%;
+    padding: 2% 0 0 0;
+}
+
+.addMoneyCurrentBalance {
+    width: 70%;
+    height: 20%;
+    margin: auto;
+}
+.addMoneyEnterAmount {
+    width: 70%;
+    height: 20%;
+    margin: 2% auto auto;
+}
+
+.addMoneyInputLabel {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    display: block;
+}
+.addMoneyEnterAmount .addMoneyInputLabel{
+    width: 29%;
+    float: left;
+}
+.addMoneyEnterAmount .form-control{
+    float: left;
+    width: 50%;
+}
+
+.addMoneyBlankSpace {
+    width: 70%;
+    height: 30%;
+    margin: auto;
+}
+
+.addMoneyNoteText {
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    color: #fff;
+    font-size: 1.5em;
+}
+.addMoneyBottomDiv{
+  width: 85%;
+  height: 30%;
+  margin: auto;
+}
+.addMoneyBonusUpperDiv{
+  width: 100%;
+  height: 60%;
+}
+.addMoneyBonusDivLeft{
+  width: 33%;
+  height: 100%;
+  background: url('../Images/button.png') center no-repeat;
+  background-size: contain;
+  float: left;
+  
+}
+.addMoneyBonusDivMiddle{
+  width: 33%;
+  height: 100%;
+  background: url('../Images/button.png') center no-repeat;
+  background-size: contain;
+  float: left;
+  
+}
+.addMoneyBonusDivRight{
+  width: 33%;
+  height: 100%;
+  background: url('../Images/button.png') center no-repeat;
+  background-size: contain;
+  float: left;
+  
+}
+.addMoneyBonusTextTop{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: bold;
+  padding: 7% 0 0 0;
+}
+.addMoneyBonusTextBottom{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  font-size: 2em;
+  color: yellow;
+  font-weight: bold;
+  padding: 0% 0 0 0;
+}
+.addMoneyBonusLowerDiv{
+  /* height: 100%; */
+  width: 40%;
+  margin: auto;
+  padding: 2% 0 0 0;
+}
+.addMoneyRupeeText{
+    color: #ffe400;
+    font-size: 1.2em;
+}
+@media only screen and (max-width: 1366px) {
+    .addMoneyPopupContainer .addMoneyPopupView {
+        height: 100%;
+        width: 75%;
+        margin: auto;
+        background: url('../Images/1366/bg-min.png') center no-repeat;
+        background-size: contain;
+        text-align: center;
+        position: relative;
+    }
+    .addMoneyPopupContainer{
+        position:fixed;
+    }
+    .addMoneyCloseBtnView {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        right: 11%;
+        top: 2%;
+    }
+}

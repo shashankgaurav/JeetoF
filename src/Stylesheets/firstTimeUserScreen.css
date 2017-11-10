@@ -1,0 +1,19 @@
+.firstTimeUserPopup{
+  width: 85%;
+  height: 100%;
+  margin: auto;
+}
+.playTypeCardPlayer{
+  width: 50%;
+  height: 300px;
+  float:left;
+  /* background: url('../Images/singlePlayer.png'); */
+  /* background-size:contain; */
+}
+.playTypeCardDetail{
+  width: 50%;
+  height: 300px;
+  float:left;
+  /* background: url('../Images/singlePlayer.png'); */
+  /* background-size:contain; */
+}

@@ -1,0 +1,52 @@
+.mainPopUpBoxDiv{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 5% 25% 5% 25%;
+}
+.innerMainDiv{
+    width: 100%;
+    height: 14%;
+    padding-top: 4%;
+    
+}
+.leftDiv{
+    width: 45%;
+    height: 100%;
+    text-align: right;
+    float: left;
+    border-bottom: 1px solid #fff;
+}
+.leftDivWithoutBorder{
+    width: 45%;
+    height: 100%;
+    text-align: right;
+    float: left;
+}
+.middleDiv{
+    width: 10%;
+    height: 100%;
+    text-align: right;
+    float: left;
+    border-bottom: 1px solid #fff;
+}
+.middleDivWithoutBorder{
+    width: 10%;
+    height: 100%;
+    text-align: right;
+    float: left;
+}
+.rightDiv{
+    width: 45%;
+    height: 100%;
+    text-align: left;
+    float: left;
+    border-bottom: 1px solid #fff;
+}
+.rightDivWithoutBorder{
+    width: 45%;
+    height: 100%;
+    text-align: left;
+    float: left;
+}

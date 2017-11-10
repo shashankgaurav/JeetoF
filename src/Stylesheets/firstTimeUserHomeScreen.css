@@ -1,0 +1,35 @@
+/* .FTUSinglePlayerMainDiv{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 4% 35% 8% 35%;
+}
+.FTUSinglePlayerInnerDiv{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+}
+.FTUSinglePlayerImg{
+  height: 100%;
+  width: 100%;
+} */
+
+.play-text {
+padding: 4% 0;
+text-align: center;
+color: #fff;
+font-size: 20px;
+}
+.firstTimeUserPopup-image{
+  height: 320px;
+  float: right;
+  cursor: pointer;
+}
+.firstTimeUserPopup-image2{
+  height: 320px;
+  float: left;
+}
+.firstTimeUserPopup-button{
+  padding: 3%;
+}

@@ -1,0 +1,62 @@
+/*.active{
+  background: url('../Images/scorePlate.png');
+     background-size: cover;
+
+}*/
+.scorePlate{
+    display: block;
+    width: 50%;
+    text-align: center;
+    float: left;
+    background: url('../Images/white-min-min.png') no-repeat;
+    background-size:contain;
+    height: 100%;
+}
+.scoreCorrect{
+    display: block;
+    width: 50%;
+    text-align: center;
+    float: left;
+    background: url('../Images/Green-min-min.png') no-repeat;
+    background-size:contain;
+    height: 100%;
+}
+.scoreWrong{
+    display: block;
+    width: 50%;
+    text-align: center;
+    float: left;
+    background: url('../Images/Red-min-min.png') no-repeat;
+    background-size:contain;
+    height: 100%;
+}
+.score{
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 1% 0 0 0;
+    float: left;
+    height: 100%;
+        font-size: 2.5em;
+}
+.scoreList{
+    width: 66%;
+      float: right;
+    height: 100%;
+}
+
+.scoreList li{
+     height: 14%;
+    list-style-type: none;
+    color: #FFF;
+}
+.scorePanel{
+     width: 20%;
+    background: url('../Images/questionBar.png');
+     height: 100%;
+    float: right;
+    background-size: contain;
+    background-position: right;
+    padding: 1% 0 1% 0;
+    background-repeat: no-repeat;
+}

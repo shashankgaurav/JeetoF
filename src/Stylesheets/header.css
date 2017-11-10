@@ -1,0 +1,231 @@
+.headerComponentPanel{
+        height: 100%;
+    padding: 1% 0% 1% 0%;
+
+}
+.mainBackground{
+    background: url('../Images/mainbackgroundminmin.jpg') no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%
+}
+.headerProfileImage{
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.mainDiv{
+    height: 20%;
+}
+.innerLeftDiv{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.innerRightDiv{
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding:0;
+}
+.headerProfileDiv{
+      /*background: url('../Images/headerProfileImage.png') no-repeat;*/
+          background-size: cover;
+    height: 100%;
+    width: 50%;
+    float: left;
+        padding: 0 0 0 0;
+
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.headerStarDiv{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.headerRightDivLeftSide{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.headerMoneyDiv{
+    /*background: url('../Images/headerMoneybar.png');*/
+        height: 100%;
+    width: 45%;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding:0;
+}
+.headerMoneyImage{
+    width: 100%;
+    height: 100%;
+}
+
+.userMoneyStatus{
+    cursor: pointer;
+}
+.userProfileImage{
+    cursor: pointer;
+    top: 3%;
+    border-radius: 50%;
+    /* border: 2px solid #000; */
+    height: 100%;
+
+}
+.userProfileName{
+    background:url('../Images/profileName.png');
+      width: 75%;
+    font-size: 3.2em;
+    font-weight: bold;
+    height: 100%;
+    line-height: 1em;
+    text-align: center;
+    float: left;
+    padding: 9% 15% 0 8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 29%;
+    z-index: 0
+}
+.profileImage{
+    background: url('../Images/profileHolder.png');
+       height: 100%;
+    width: 40%;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+.profileImage img{
+       height: 88%;
+    width: 86%;
+    padding: 2%;
+}
+.userMoneyStatus {
+    font-size: 3em;
+    font-weight: bold;
+    height: 100%;
+    width: 97%;
+    text-align: center;
+    float: right;
+    padding: 10% 0 0 40%;
+    background: url('../Images/scoreAmount.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-size: contain;
+
+}
+.headerMoneySymbol{
+    background: url('../Images/coins.png');
+     width: 45%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+}
+ @media only screen and (max-width: 1366px) {
+         .userMoneyStatus {
+            font-size: 3em;
+            font-weight: bold;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            float: right;
+            padding: 9% 0 0 29%;
+            background: url('');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            background-size: contain;
+            
+        }
+        .headerMoneySymbol{
+            background: url('');
+            width: 35%; 
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            z-index: 1;
+            left: 15%;
+            padding: 4% 0 0 0;
+        }
+        .userProfileName{
+            font-size: 2.2em;
+            padding: 7% 15% 0 8%;
+            left: 25%;
+        }
+        
+        .profileImage{
+            width: 35%;
+            background:url('../Images/profileHolder.png');
+            background-size:cover;
+        }
+     
+        .headerComponentPanel{
+                padding: 6px 0% 1% 0%;
+        }
+        .profileImage img {
+            height: 96%;
+            width: 93%;
+            padding: 4%;
+            position: absolute;
+            top: 1%;
+            left: 0%;
+        }
+        .userMoneyStatusScore{
+            position: absolute;
+            top: 21%;
+            right: 0;
+            text-align: center;
+            display: block;
+            width: 53%;
+        }
+        .userProfileNamePlateImage{
+
+        }
+        .userProfileName{
+            background:url('');
+            font-size: 2.2em;
+            padding: 5% 15% 0 0%;
+            left: 25%;
+        }
+        .userNameImage{
+             position: absolute;
+            width: 75%;
+            top: 23%;
+            left: 8%;
+        }
+       .headerStarDiv{
+            padding-left: 0;
+        }
+        .profileImage {
+            width: 34%;
+        }
+          .gameScreen .profileImage img {
+            height: 100%;
+            width: 95%;
+            padding: 4%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+          }
+ }
+.profile_popup{
+  z-index: 300;
+}
+

@@ -1,0 +1,94 @@
+.accountStatementScreen {
+  background: url('../Images/loginBackground.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: 100% 100%;
+  background-size: cover;
+  padding: 1%
+}
+
+.accountStatementMainDiv {
+  background: url('../Images/accountBalanceBg.png') center no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  margin: auto;
+}
+.accountStatementInnerDiv {
+  width: 100%;
+  height: 100%;
+  padding: 0% 6% 0% 6%;
+}
+.accountStatementTopDiv {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  padding: 2% 0% 0% 0%;
+}
+.accountStatementImages {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+.accountStatementTabView{
+  height: 75%;
+  width: 100%;
+  padding: 1% 0 0 0;
+}
+.accountStatementInnerTabView{
+  height: 90%;
+  width: 96%;
+  margin: auto;
+}
+.accountStatementUserAccountTabPanel{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+.accountStatementUserAccountData{
+  background: url('../Images/transparent_patch_big.png') center no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  
+}
+.accountStatementUserAccountText{
+  width: 90%;
+  height: 100%;
+  font-size: 1.5em;
+  color: #fff;
+  margin: auto;
+}
+.accountStatementUserAccountDataMainDiv{
+  width: 100%;
+  height: 10%;
+  padding: 1%;
+}
+.accountStatementBottomView{
+  width: 100%;
+  height: 10%;
+}
+.accountStatementBottomViewLeft{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 0 0 0% 1%;
+}
+.accountStatementBottomViewRight{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 0.5% 1% 1% 0%;
+}
+.accountStatementBackBtnImages{
+  /* width: 100%; */
+  height: 100%;
+  float: left;
+  cursor: pointer;
+}
+.accountStatementHomeBtnImages{
+  /* width: 100%; */
+  height: 100%;
+  float: right;
+  cursor: pointer;
+}

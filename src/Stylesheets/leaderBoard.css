@@ -1,0 +1,214 @@
+.leaderBoardWrapper{
+    background:url('../Images/leaderBoardPopup.png');
+    height: 90%;
+    width: 92%;
+    position: absolute;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    left: 4%;
+    top: 5%;
+    padding: 2% 0 0 0;
+    /*margin: 4% 0 0 7%;*/
+}
+
+.leaderBoardHeader{
+    width: 60%;
+    height: 30%;
+    margin: auto;
+}
+.entryFee {
+    height:180px;
+    background:url('../Images/Entry fee -min.png');
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.roomType{
+    height:180px;
+    background:url('../Images/Room type-min.png');
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.entryFeeText{
+        font-size: 4em;
+    text-align: center;
+    color: yellow;
+    padding: 14% 0 0 0;
+        text-shadow: 0px 6px 4px #000;
+}
+.roomTypeText{
+        font-size: 4em;
+    text-align: center;
+    color: yellow;
+    padding: 14% 0 0 0;
+        text-shadow: 0px 6px 4px #000;
+}
+.completedOn{
+        text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
+.leaderBoardSlider{
+        height: 70%;
+            height: 70%;
+    width: 90%;
+    margin: auto;
+}
+.leaderBoardSliderData{
+    width: 75%;
+    margin: auto;
+    height: 100%;
+}
+.leaderBoardDataRow{
+       height: 23%;
+    margin: 0% 0 0% 0;
+    padding: 1% 2% 0 2%;
+}
+.leaderBoardDataTab1{
+    background:url('../Images/leaderBoardSlot1.png');
+     background-position: center;
+    background-size: cover;
+  
+}
+.leaderBoardDataTab2{
+    background:url('../Images/leaderBoardSlot2.png');
+     background-position: center;
+    background-size: cover;
+   
+}
+.leaderBoardDataTab3{
+    background:url('../Images/leaderBoardSlot3.png');
+     background-position: center;
+    background-size: cover;
+  
+}
+.leaderBoardDataTab4{
+    background:url('../Images/leaderBoardSlot4.png');
+     background-position: center;
+    background-size: cover;
+   
+}
+.winingCount{
+        font-size: 4em;
+    color: #FFF;
+    text-align: center;
+    padding: 1% 0 1% 0;
+}
+.winnerTab{
+    background:url('../Images/leaderBoardActiveTab.png');
+      /* background-size: cover; */
+    background-position: center;
+    height: 105px;
+        padding: 1% 6% 1% 6%;
+    font-size: 3.6em;
+    background-repeat: no-repeat;;
+}
+.leaderUserName{
+width: 35%;
+    float: left;
+    text-align:center;
+}
+.leaderWiningScore{
+    width: 30%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+.leaderUseTime{
+width: 35%;
+    float: left;
+    text-align:center;
+}
+.closeBoard{
+background:url('../Images/closeicon.png');
+      position: absolute;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: contain;
+       right: -2%;
+    top: -3%;
+}
+.shareData{
+    background:url('../Images/Share.png');
+        position: absolute;
+    height: 100px;
+    width: 165px;
+    bottom: 2%;
+    right: 3%;
+    background-position: center;
+    background-size: contain;
+}
+._slideInner_fhwgk_1{
+        height: 33.33% !important;
+}
+._buttonNext_p1bs6_1 {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+        
+    width: 100px;
+    height: 140px;
+    border: none;
+    background:url('../Images/nextArrow.png');
+}
+._buttonBack_113ph_1 {
+    cursor: pointer;
+    height: 140px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    border: none;
+    background:url('../Images/previousArrow.png');
+}
+.carousel {
+    position: relative;
+    height: 100%;
+}
+.carouselButtons{
+        position: relative;
+    top: 35%;
+}
+.jackpotType{
+        text-align: center;
+    height: 18%;
+    font-size: 5em;
+    height: 18%;
+}
+.leaderBoardjackPot{
+    height: 82%;
+    background:url('../Images/Play history_leaderboard_jackpot_loosers.png');
+        background-position: center;
+    background-size: contain;
+}
+.jackpotAmount{
+      font-size: 6em;
+    height: 45%;
+    padding: 4% 0 0 0;
+    color: yellow;
+}
+.jackpotWinner{
+       font-size: 6em;
+    padding: 4% 0 0 0;
+    height: 45%;
+    color: #FFF;
+}
+.innerjackpotWrapper{
+    width: 50%;
+    float: right;
+    text-align: center;
+        height: 100%;
+}
+
+.resultNotDeclared
+{
+    text-align: center;
+    font-size: 60pt;
+    color: yellow;
+    padding: 5% 0% 0% 10%;
+    margin-top:35%; 
+}

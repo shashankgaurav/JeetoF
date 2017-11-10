@@ -1,0 +1,62 @@
+.congratulationWrapper{
+background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.congratulationPanel{
+ padding: 10% 4% 0 4%;
+    height: 90%;
+    width: 73%;
+    background: url('../Images/About_bg.png');
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    background-repeat: no-repeat;
+}
+.closeCongratulation{
+       background: url('../Images/closeicon.png');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+    right: -3%;
+}
+.congratulationDivWrapper{
+    height: 60%;
+}
+.congratsImage{
+           background: url('../Images/Congratulation.png');
+              height: 35%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.congratsCreaditText{
+        text-align: center;
+    font-size: 4em;
+    font-family: sans-serif;
+    color: #FFF;
+    padding: 0 20% 0 20%;
+}
+.congratulationButtonPanel{
+           padding: 0 35% 0 35%;
+    height: 15%;
+        margin: 5% 0 0 0;
+}
+.congratulationButtonPanel .answerButtonText{
+        font-size: 3em;
+    font-family: sans-serif;
+     text-shadow: 3px 4px 0px #000;
+         font-weight: bold;
+}
+.congratsCreditAmountWrapper{
+        color: yellow;
+}

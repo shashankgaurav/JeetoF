@@ -1,0 +1,23 @@
+
+.homeScreen{
+    background: url(/static/media/mainbackgroundminmin.2fb65342.jpg) no-repeat;
+        position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+}
+.header{
+           height: 20vh;
+}
+.middelContainer{
+         height: 65vh;
+        padding: 1% 0 0 0;
+}
+.footerButtonPanel{
+     height: 15vh;
+}
+.FTUSinglePlayerImg{
+        width: 35%;
+    margin: auto;
+    cursor: pointer;
+}

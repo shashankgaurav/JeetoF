@@ -1,0 +1,41 @@
+.videoPlayerScreenWrapper {
+  background: url('../Images/loginBackground.jpg');
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.videoPlayerScreenTopView{
+  width: 100%;
+  height: 25%;
+  position: relative;
+  padding: 1%;
+}
+.videoPlayerScreenTopView .jitoMoneyLogoContainer{
+  height: 100%;
+}
+.videoPlayerScreenTopView .jitoMoneyLogo{
+  height: 100%;
+  background-size: contain;
+}
+.videoPlayerScreenTimer{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0);
+  right: 2%;
+  /* top: 25%; */
+  bottom: 50%;
+}
+.videoPlayerScreenBottomView{
+  width: 100%;
+  height: 74%;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+.videoTimer{
+  top: 0%
+}

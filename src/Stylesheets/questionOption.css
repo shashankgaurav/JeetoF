@@ -1,0 +1,88 @@
+.questionOptionPanel{
+   height:100%;
+}
+
+.optionPanel{
+    height: 60%;
+    padding: 0 2% 0 2%;
+}
+
+.option{
+    width: 50%;
+    text-align: left;
+    padding: 1% 0 0 1%;
+    /* height: 100px; */
+    /* height: 115px; */
+    float: left;
+    /*height: 110px;*/
+}
+
+.questionText{
+    height: 40%;
+}
+
+.question{
+    text-align: left;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 1% 0 0 0;
+}
+
+.optionDiv{
+    height: 100px;
+}
+
+.optionIndex{
+    padding: 1% 0 0 0;
+    color: yellow;
+    font-size: 1.1em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.optionPanel .answerButtonText{
+    padding: 1% 0 0 0;
+    color: #fff;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.optionText{
+    padding: 2% 0 0 2%;
+    text-align: left;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+.timer_div{
+  height: 100%;  
+}
+/* *************media rules for 1366 resolutions****************/
+    @media only screen and (max-width: 1366px) {
+       .optionDiv{
+            height: 60px;
+        }
+        .question{
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1% 0 0 0;
+        }
+        .gameScreenButtonText {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            font-size: 2em;
+            color: #FFF;
+        }
+        .timer_div {
+             height: 95px;
+             text-align: right;
+        }
+        .gameQuesionAnswerPanel .answerButtonText{
+            padding:0;
+        }
+         .gameScreenheader {
+            height: 20vh;
+        }
+    }

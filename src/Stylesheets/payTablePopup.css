@@ -1,0 +1,111 @@
+.popupContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+.popupView{
+      height: 100%;
+    width: 75%;
+    margin: auto;
+    background: url('../Images/About_bg-min.png') center no-repeat;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+                padding: 5% 6% 4% 6%;
+
+}
+.closeBtnView{
+      position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 13%;
+    top: -3%;
+}
+.closeImg{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.errorText{
+    padding: 25%;
+    color: #fff;
+}
+.paytableHeader{
+        height: 18%;
+        background: url('../Images/Paytable.png');
+            background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.paytableDetail{
+    height: 82%;
+    overflow-y: auto;
+}
+.payDetailText{
+text-align: left;
+    padding: 0 10% 0 15%;
+}
+.payDetailData{
+    text-align: right;
+    padding: 0 15% 0 10%;
+}
+.paytableRow {
+       background: url('../Images/transparent _patch_small.png') center no-repeat;
+       height: 8%;
+    color: #FFF;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 4px 0 0 0;
+        margin: 1% 0 1% 0;
+            background-size: cover;
+    background-position: center;
+}
+  /* *************media rules for 1366 resolutions****************/
+    @media only screen and (max-width: 1366px) {
+        .paytableRow {
+            font-size: 1.5em;
+        }
+        .FTUPlayNowWrapper .popupView {
+            height: 91%;
+            width: 75%;
+            margin: auto;
+            background: url(/static/media/About_bg-min.d499896f.png) center no-repeat;
+            background-size: contain;
+            text-align: center;
+            position: relative;
+            padding: 5% 9% 4% 9%;
+            margin-top: 2%;
+        }
+        .FTUPlayNowWrapper .closeBtnView {
+                position: absolute;
+                height: 70px;
+                width: 70px;
+                right: 16%;
+                top: 2%;
+            }
+            .roomSelectionCardpanel .popupView{
+                  height: 90%;
+                  margin-top: 2%;
+                  padding: 2% 10% 0 10%;
+            }
+            .roomSelectionCardpanel  .popupContainer{
+                position: fixed;
+            }
+            .roomSelectionCardpanel .closeBtnView {
+                position: absolute;
+                height: 70px;
+                width: 70px;
+                right: 16%;
+                top: 1%;
+            }
+            .roomSelectionCardpanel .paytableRow{
+                margin: 1% 0 2% 0;
+            }
+
+    }

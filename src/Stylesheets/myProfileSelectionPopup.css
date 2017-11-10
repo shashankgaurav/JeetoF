@@ -1,0 +1,372 @@
+
+.myProfileContainer
+{
+    background: red;
+    height: 95vh;
+    width: 190vh;
+    background: url('../Images/loginBackground.jpg');
+    /* background-position: center;
+    background-size: cover;
+    height: 90%;  */
+}
+
+.myScreenBackground
+{
+    background: url('../Images/Popup-min.png') no-repeat;
+    height: 90%;
+    width: 70%;
+    background-position: center;
+    background-size: contain;
+    top:3%;
+    left: 15%;
+    position: absolute;
+    margin: auto;
+    z-index: 100;
+    padding: 1% 0 1% 0;
+}
+
+.buttonsContainer
+{
+    height: 100%;
+    width:63%;
+    margin: auto;
+}
+
+.myProfileTopDiv
+{
+    height: 40%;
+}
+
+.myProfileBottomDiv
+{
+    height: 40%;
+}
+
+.myProfileMiddleDiv
+{
+    height: 20%;
+}
+
+.myProfileButtonDiv
+{
+    height: 35%;
+}
+
+.myProfileBlankDiv
+{
+    height: 30%;
+}
+
+.myPerformanceButtonDiv
+{
+    height: 35%;
+}
+
+.myProfilePopupCloseImg{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.myProfilePopupCloseBtnView{
+    position: absolute;
+    height: 10%;
+    width: 5%;
+    right: 13%;
+    top: 4%;
+    z-index: 100;
+}
+
+.settingsContainer
+{
+    padding-top: 3%;
+    height: 100%;
+}
+
+.settingsHeadingDiv
+{
+    height: 25%;
+    padding: 0;
+    margin: 0;
+}
+
+.volumeDiv
+{
+    height: 25%;
+    /* background: pink; */
+}
+
+.logoutBtnDiv
+{
+    height: 25%;
+    /* background:yellow; */
+}
+
+.settingsLeftDiv
+{
+    height: 100%;
+    /* background: red; */
+}
+
+.settingsRightDiv
+{
+    height: 100%;
+    /* background: red; */
+}
+
+.settingImgDiv
+{
+    margin-top: 3%;
+    padding: 0%;
+    text-align: center;
+}
+
+
+/* .languageDiv
+{
+    height: 25%;
+    background: orange;
+} */
+
+.settingLanguageRow
+{
+    height: 20%;
+    width: 100%;
+    padding: 0;
+    /* background: red; */
+}
+
+
+.settingLanguageLable
+{
+    text-transform: uppercase;
+    margin: auto;
+    color: #F7ED6E;
+    text-align:center;
+    font-size:3em;
+    font-weight: bolder;
+    font-style: italic;
+    /* height: 30%;
+    width : 100%; */
+    /* background: pink; */
+}
+
+.settingVolumeLable
+{
+    text-transform: uppercase;
+    margin: auto;
+    color: #F7ED6E;
+    text-align:center;
+    font-size:3em;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.settingManageVolumeRow
+{
+    margin-top:3%;
+}
+
+.changeVolumeSlider
+{
+    background: url('../Images/selectLanguageModeBg.png') no-repeat;
+    background-position: center;
+    height: 100px;
+    padding-top: 1%;
+}
+
+.selectLanguageModeBg
+{
+    background: url('../Images/selectLanguageModeBg.png') no-repeat;
+    background-position: center;
+    height: 100px;
+}
+
+.settingLanguageButtons
+{
+    padding: 0 0 0 0;
+    margin-top: 0;
+    height: 100px;
+}
+
+.settingScreenLogoutButton
+{
+    height: 100%;
+    /* background: red; */
+    margin: auto;
+    text-align: center;
+}
+
+.settingFooter
+{
+    height: 8%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.languageSelectedButton{
+    background: url('../Images/settingLanguageSelected.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    padding: 7% 0 5% 35%;
+    position: absolute;
+    margin-left: 0;
+}
+
+.languageUnSelectedButton{
+    background: url('../Images/settingLanguageUnselected.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    padding: 7% 0 5% 40%;
+    position: absolute;
+    margin-left: 0;
+}
+
+.rangeslider__handle {
+    width: 50px !important;
+    height: 85px !important;
+    border-radius: 0px !important;
+    top: 80%;
+}
+
+.rangeslider__fill {
+    height: 20px !important;
+    background-color: #161384;
+    border-radius: 10px !important;
+    top: 0;
+}
+
+.rangeslider-horizontal {
+    height:20px !important;
+    border-radius: 0px !important;
+    background-color: #161384;
+}
+.rangeslider-horizontal .rangeslider__fill {
+    height: 100%;
+    background-color:#161384 !important;
+    border-radius: 10px;
+    top: 0;
+}
+
+.rangeslider-horizontal {
+    border-radius: 10px !important;
+    width: 55% !important;
+    margin-left: 24% !important;
+}
+
+.settingsLanguageText
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.languageBtnActive
+{
+    background: url('../Images/settingLanguageSelected.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    padding: 7% 0 5% 35%;
+    position: absolute;
+    margin-left: 0;
+}
+
+.defaultComponent
+{
+    height: 50%;
+    width: 80%;
+}
+  /* *************media rules for 1366 resolutions****************/
+    @media only screen and (max-width: 1366px) {
+        .settingProfileContainer{
+                height: 48%;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            padding:3% 0 0 0;
+        }
+        .settingPerformanceContainer{
+                height: 48%;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            padding:3% 0 0 0;
+
+        }
+        .settingUserImage{
+
+        }
+        .settingUserImage img{
+             height: 90px;
+             border-radius: 50%;
+        }
+        .settingPerformanceImage img{
+              height: 90px;
+        }
+        .settingUserRating{
+            width: 36%;
+            margin: auto;
+            height: 30px;
+        }
+        .myProfileButtonDiv
+          {
+              height: 35%;
+              width:55%;
+              margin: 3% auto;
+          }
+          .settingUserName{
+              font-size: 1.4em;
+              color: #FFF;
+              font-weight: bold;
+          }
+           .settingUserName .react-rater {
+                display: block;
+                line-height: normal;
+                /* height: 100%; */
+                height: 33px;
+                margin: 0% 0 0 0;
+            }
+            .settingUserRating .react-rater{
+                    display: block;
+                line-height: normal;
+                /* height: 100%; */
+                height: 33px;
+                margin: auto;
+                width: 80%;
+            }
+            .settingUserRating .react-rater > div {
+                display: block;
+                float: left;
+                width: 20%;
+                height: 100%;
+            }
+            .myPerformanceButtonDiv{
+                height: 18%;
+                width: 55%;
+                margin: 3% auto;
+                
+            }
+            .profilePageDivider{
+                height: 1%;
+                background: url('../Images/HorizontalLine.png');
+                width: 60%;
+                margin: auto;
+                background-size: contain;
+            }
+            .myProfilePopupCloseBtnView {
+                position: absolute;
+                height: 10%;
+                width: 5%;
+                right: 17%;
+                top: 0%;
+                z-index: 100;
+            }
+    }

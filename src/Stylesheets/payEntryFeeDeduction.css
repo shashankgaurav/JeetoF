@@ -1,0 +1,121 @@
+.payEntryFeeDeductionPopupContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  /* padding: 5% 0% 0% 0%; */
+}
+
+.payEntryFeeDeductionPopupView {
+  height: 100%;
+  width: 75%;
+  margin: auto;
+  background: url('../Images/1366/bg-min.png') center no-repeat;
+  background-size: contain;
+  text-align: center;
+  position: relative;
+}
+
+.payEntryFeeDeductionCloseBtnView {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 11%;
+  top: 2%;
+}
+
+.payEntryFeeDeductionCloseImg {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.payEntryFeeDeductionErrorText {
+  padding: 20%;
+  color: #fff;
+}
+
+.payEntryFeeDeductionMainDiv {
+  height: 100%;
+  width: 100%;
+}
+
+.payEntryFeeDeductionInnerDiv {
+  height: 100%;
+  width: 100%;
+  padding: 3% 0% 3% 0%;
+}
+
+.payEntryFeeDeductionTopDiv {
+  height: 20%;
+  width: 100%;
+  padding: 1% 25% 1% 25%;
+}
+
+.payEntryFeeDeductionTitleImg {
+  height: 100%;
+  width: 100%;
+}
+
+.payEntryFeeDeductionMiddleDiv {
+  height: 40%;
+  width: 100%;
+  padding: 2% 0 0 0;
+}
+
+.payEntryFeeDeductionWinningAccountBalance {
+  width: 70%;
+  height: 40%;
+  margin: auto;
+}
+
+.payEntryFeeDeductionText {
+  width: 50%;
+  height: 25%;
+  margin: auto;
+  font-size: 1.7em;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.payEntryFeeDeductionBottomDiv{
+  width: 35%;
+  height: 17%;
+  margin: auto;
+
+}
+.payEntryFeeDeductionBlankDiv{
+  width: 100%;
+  height: 15%;
+}
+/*********media queries for 1366 screen***********/
+@media only screen and (max-width: 1366px) {
+  .payEntryFeeDeductionPopupView {
+     background: url('../Images/1366/bg-min.png');
+            background-size: contain;
+                width: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+  }
+  .payEntryFeeDeductionPopupContainer{
+    position: fixed;
+  }
+  .payEntryFeeDeductionCloseBtnView {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 11%;
+    top: 2%;
+  }
+  .payEntryFeeDeductionBottomDiv .answerButtonText{
+        padding: 1%;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      font-size: 1.5em;
+  }
+}

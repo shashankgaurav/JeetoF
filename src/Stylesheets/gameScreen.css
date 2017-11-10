@@ -1,0 +1,108 @@
+.gameScreen{
+    background: url('../Images/gameScreenBg.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+.gameScreenheader{
+     height: 18vh;
+}
+
+.gameQuesionAnswerPanel{
+    height: 40vh;
+        padding: 0 4% 0px 4%;
+}
+
+.scoreBoard{
+    width: 100%;
+    height: 40vh;
+    padding: 0 0 2% 0;
+}
+.qustionCountList{
+
+}
+
+.questionListContainer{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  float: right;
+}
+
+.questionList{
+  height: 100%;
+  width: 20%;
+  float: right;
+}
+
+.selectedQuestionContainer{
+  height: 10%;
+  width: 100%;
+  position: relative;
+}
+
+.selectedQuestion{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+}
+
+.scoreBoardContainer{
+  position: absolute;
+  height: 100%;
+  width: 12%;
+  right: 0;
+  top: 2%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.questionNText{
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 230%;
+  text-align: right;
+  z-index: 10;
+  left: 40%;
+  width: 50%;
+  float: left;
+}
+
+.questionNTextContainer{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.questionStatus{
+
+    height: 100%;
+    color: #fff;
+    z-index: 10;
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+
+.statusImage{
+  height: 80%;
+  position: relative;
+  top: 10%;
+}
+
+ /* *************media rules for 1366 resolutions****************/
+    @media only screen and (max-width: 1366px) {
+       .mediaScreenNext .answerButtonText {
+            height:45px;
+        }
+        .selectedQuestionContainer{
+          height: 16%;
+          width: 100%;
+          position: relative;
+        }
+        .questionNText{
+              font-size: 2em;
+        }
+    }

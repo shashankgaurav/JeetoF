@@ -1,0 +1,195 @@
+.payEntryFeeInsufficientBalancePopupContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    /* padding: 5% 0% 0% 0%; */
+}
+
+.payEntryFeeInsufficientBalancePopupView {
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    background: url('../Images/popupBg.png') center no-repeat;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+}
+
+.payEntryFeeInsufficientBalanceCloseBtnView {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 11%;
+    top: 2%;
+}
+
+.payEntryFeeInsufficientBalanceCloseImg {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.payEntryFeeInsufficientBalanceErrorText {
+    padding: 20%;
+    color: #fff;
+}
+
+.payEntryFeeInsufficientBalanceMainDiv {
+    height: 100%;
+    width: 100%;
+}
+
+.payEntryFeeInsufficientBalanceInnerDiv {
+    height: 100%;
+    width: 100%;
+    padding: 3% 0% 3% 0%;
+}
+
+.payEntryFeeInsufficientBalanceTopDiv {
+    height: 20%;
+    width: 100%;
+    padding: 1% 25% 1% 25%;
+}
+
+.payEntryFeeInsufficientBalanceMiddleDiv {
+    height: 40%;
+    width: 100%;
+    padding: 2% 0 0 0;
+}
+
+
+/* .payEntryFeeInsufficientBalanceWinningAccountBalance {
+  width: 70%;
+  height: 20%;
+  margin: auto;
+} */
+
+.payEntryFeeInsufficientBalanceText {
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    font-size: 1.7em;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.payEntryFeeInsufficientBalanceBottomDiv {
+    width: 35%;
+    height: 17%;
+    margin: auto;
+}
+
+.payEntryFeeInsufficientBalanceBlankDiv {
+    width: 100%;
+    height: 15%;
+}
+
+.payEntryFeeInsufficientBalanceDivider {
+    background: url('../Images/divider.png');
+    height: 18px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1% 0 1% 0;
+}
+
+.payEntryFeeInsufficientBalanceSocialLoginText {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+}
+
+.payEntryFeeInsufficientBalanceSocialTextSignUp {
+    color: yellow;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0px 3px 3px #000;
+    width: 100%;
+    margin: 2% auto 2%;
+    position: relative;
+}
+
+.payEntryFeeInsufficientBalanceSocialImage {
+    width: 70%;
+    margin: auto;
+    height: 60%
+}
+
+.socialText:before {
+    content: "";
+    background-image: url('../Images/star.png');
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background-position: center;
+    background-size: contain;
+    left: 6%;
+    background-repeat: no-repeat;
+}
+
+.payEntryFeeInsufficientBalanceSocialTextSignUp:before {
+    content: "";
+    background-image: url('../Images/star.png');
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    background-position: center;
+    background-size: contain;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.payEntryFeeInsufficientBalanceLastDiv {
+    height: 20%;
+    width: 100%;
+}
+  @media only screen and (max-width: 1366px) {
+      .payEntryFeeInsufficientBalancePopupView{
+        background: url('../Images/1366/bg-min.png');
+            background-size: contain;
+                width: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+       }
+       .payEntryFeeInsufficientBalancePopupContainer{
+           position: fixed;
+       }
+       .payEntryFeeInsufficientBalanceSocialImage  .answerButton button{
+           padding-top: 1%;
+       }
+       .payEntryFeeInsufficientBalanceSocialImage .facebookIconWrapper img{
+               height: 55px;
+       }
+       .payEntryFeeInsufficientBalanceSocialImage .answerButtonText {
+            -webkit-text-shadow: 0px 2px 0px #000;
+            -moz-text-shadow: 0px 2px 0px #000;
+            text-shadow: 0px 2px 0px #000;
+            font-weight: 600;
+       }
+       .payEntryFeeInsufficientBalanceSocialImage {
+            width: 70%;
+            margin: auto;
+            height: 55%;
+        }
+        .payEntryFeeInsufficientBalanceBottomDiv .answerButtonText{
+            padding: 1%;
+            -webkit-text-shadow: 0px 2px 0px #000;
+            -moz-text-shadow: 0px 2px 0px #000;
+            text-shadow: 0px 2px 0px #000;
+            font-weight: 600;
+        }
+        .payEntryFeeInsufficientBalanceSocialTextSignUp:before{
+            left:5%;
+        }
+        .payEntryFeeInsufficientBalanceCloseBtnView {
+            height: 60px;
+            width: 60px;
+        }
+  }

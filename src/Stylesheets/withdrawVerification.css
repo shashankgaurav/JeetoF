@@ -1,0 +1,256 @@
+.withdrawVerificationScreen {
+    background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: 100% 100%;
+    background-size: cover;
+    padding: 1%
+}
+
+.withdrawVerificationMainDiv {
+    background: url('../Images/accountBalanceBg.png') center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    margin: auto;
+}
+
+.withdrawVerificationInnerDiv {
+    width: 100%;
+    height: 100%;
+    padding: 0% 6% 0% 6%;
+}
+
+.withdrawVerificationTopDiv {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    padding: 2% 0% 0% 0%;
+}
+
+.withdrawVerificationImages {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+
+.withdrawVerificationTabView {
+    height: 75%;
+    width: 100%;
+    padding: 1% 0 0 0;
+}
+
+.withdrawVerificationInnerTabView {
+    height: 90%;
+    width: 96%;
+    margin: auto;
+}
+
+.withdrawVerificationUserAccountTabPanel {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 2% 0 0 0;
+}
+
+.withdrawVerificationUserAccountData {
+    background: url('../Images/transparent_patch_big.png') center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.withdrawVerificationUserAccountText {
+    width: 90%;
+    height: 100%;
+    font-size: 1.5em;
+    color: #fff;
+    margin: auto;
+}
+
+.withdrawVerificationUserAccountDataMainDiv {
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+}
+
+.withdrawVerificationBottomView {
+    width: 100%;
+    height: 10%;
+}
+
+.withdrawVerificationBottomViewLeft {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0 0 0% 1%;
+}
+
+.withdrawVerificationBottomViewRight {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0.5% 1% 1% 0%;
+}
+
+.withdrawVerificationBackBtnImages {
+    /* width: 100%; */
+    height: 100%;
+    float: left;
+    cursor: pointer;
+}
+
+.withdrawVerificationHomeBtnImages {
+    /* width: 100%; */
+    height: 100%;
+    float: right;
+    cursor: pointer;
+}
+
+.withdrawVerificationTabNotes {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.withdrawVerificationPhoneDetails {
+    background: url('../Images/transparent_patch_big.png') center no-repeat;
+    width: 100%;
+    height: 40px;
+    background-size: 100% 100%;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-top: 3%;
+}
+
+.withdrawVerificationPhoneLeft {
+    width: 35%;
+    height: 100%;
+    float: left;
+    padding: 0.5% 0 0 0;
+}
+
+.withdrawVerificationPhoneMiddle {
+    width: 30%;
+    height: 100%;
+    float: left;
+    font-weight: bolder;
+    padding: 0.3%;
+    border-left: 5px #5a52e6 solid;
+    border-right: 5px #5a52e6 solid;
+}
+
+.withdrawVerificationPhoneMiddleText {
+    text-align: center;
+    background: url('../Images/pinkBar.png') center no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    padding: 2% 0 0 0;
+}
+
+.withdrawVerificationPhoneRight {
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+
+.withdrawVerificationPhoneLeftText {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.withdrawVerificationPhoneMiddleVerifiedText {
+    color: #00ff30;
+}
+
+.withdrawVerificationPhoneRightChange {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    float: right;
+}
+.withdrawVerificationEmailMiddleNotVerifiedText{
+  color: #ff3535;
+}
+.withdrawVerificationPanCardInnerDiv{
+    width: 90%;
+    height: 100%;
+    padding: 1% 5% 0% 5%;
+    margin: auto;
+}
+.withdrawVerificationinputLabel{
+    color: #ffffff;
+    /* padding: 1%; */
+    font-size: 1.5em;
+}
+.withdrawVerificationInputSuggestion{
+    color: #ffffff;
+    font-size: 1.2em;
+    
+}
+.withdrawVerificationselectBox{
+    border-radius: 0 !important;
+    box-shadow: 2px 3px 14px #888 inset !important;
+}
+.withdrawVerificationPanCardSubmission{
+    width: 30%;
+    height: 10%;
+    margin: auto;
+}
+.withdrawVerificationBankAccountSubmitDiv{
+    width: 30%;
+    height: 10%;
+    margin: auto;
+    margin-top: 2%;
+}
+.image-preview{
+    width: 100%;
+}
+.image-preview-filename{
+    width: 100%;
+    height: 32px;
+    border-right: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: 0;
+}
+.image-preview-input {
+    overflow: hidden;
+	margin: 0px;    
+    color: #333;
+    margin-top: -5px;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    margin-left: -1px;
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.withdrawInputBtn{
+    position: absolute;
+    width: 10px;
+    display: block;
+    top: 7px;
+    right: 75px;
+}
+.withdrawInputBtn .btn.btn-default:hover{
+    background-color: transparent
+}
+.image-preview-input-title {
+    margin-left:2px;
+}

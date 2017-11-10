@@ -1,0 +1,171 @@
+.oval-button {
+    background: url('../Images/swap.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 157px;
+    float: left;
+}
+
+.oval-button-img {
+    padding: 6% 0 0 0%;
+    text-align: center;
+}
+
+.butonCounter {
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    background: red;
+    border-radius: 50px;
+    right: 0;
+    top: 6%;
+    text-align: center;
+    padding: 4% 0 0 0;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+}
+
+.ovalButton {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.butonImage {
+    height: 80px;
+}
+
+.buttonPanel {
+    width: 65%;
+    height: 100%;
+    margin: auto;
+}
+
+.buttonNotification {
+    background: url('../Images/notification.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonMessage {
+    background: url('../Images/message.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonSetting {
+    background: url('../Images/settings.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonInfo {
+    background: url('../Images/info.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonLeaderboard {
+    background: url('../Images/leaderboard.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonNotificationFirstUserHome {
+    background: url('../Images/notificationcopymin.png') no-repeat;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonMessageFirstUserHome {
+    background: url('../Images/messagecopymin.png') no-repeat;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonSettingFirstUserHome {
+    background: url('../Images/settingscopymin.png') no-repeat;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonInfoFirstUserHome {
+    background: url('../Images/infocopymin.png') no-repeat;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.buttonLeaderboardFirstUserHome {
+    background: url('../Images/leaderboardcopymin.png') no-repeat;
+    border: none;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+@media only screen and (max-width: 1366px) {
+    .butonCounter
+    {width: 25%;
+    height: 46%;
+    background: red;
+    border-radius: 50px;
+    right: 6px;
+    }
+}

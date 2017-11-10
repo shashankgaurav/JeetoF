@@ -1,0 +1,177 @@
+.afterSignUpWrapper{
+    background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.afterSignupScreenPanel{
+            padding: 2% 4% 0 4%;
+    height: 90%;
+    width: 73%;
+    background: url('../Images/About_bg.png');
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    background-repeat: no-repeat;
+}
+.closeAfterSign{
+     background: url('../Images/closeicon.png');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+    right: -3%;
+}
+.afterSignLogo .jitoMoneyLogo{
+       width: 340px;
+    height: 300px;
+}
+.afterSingupTextWrapper{
+        height: 38%;
+}
+.creditAmountText{
+       font-size: 2.7em;
+    color: #FFF;
+    text-align: center;
+    width: 84%;
+    margin: auto;
+    padding: 0 0 2% 0;
+    font-family: sans-serif;
+        font-weight: bold;
+}
+.jackPointText{
+     font-size: 2.7em;
+    color: #FFF;
+    text-align: center;
+    width: 86%;
+    margin: auto;
+    padding: 0 0 2% 0;
+    font-family: sans-serif;
+        font-weight: bold;
+}
+.addMoneyText{
+       font-size: 2.2em;
+    color: #FFF;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-family: sans-serif;
+}
+.afterSignupFacebook{
+    height: 100px;
+}
+.afterSignupAddMoney{
+    height: 80px;
+    width: 80%;
+    margin: 3% auto;
+}
+.afterSignupFacebook .facebookWrapper .answerButtonText{
+      font-size: 2.4em;
+    padding: 0;
+    text-shadow: 3px 4px 0px #000;
+    font-family: sans-serif
+}
+.afterSignupAddMoney .answerButtonText{
+    font-family: sans-serif;
+     font-size: 2.4em;
+      text-shadow: 3px 4px 0px #000;
+          font-weight: bold;
+}
+.afterSignupFacebook .facebookIconWrapper {
+       text-align: right;
+}
+.afterSignUpButtonPanel{
+    height: 100%;
+}
+/****media query for 1366 resolutions****/
+@media only screen and (max-width: 1366px) {
+    .afterSignupScreenPanel{
+            padding: 0% 4% 0 4%;
+            height: 90%;
+            width: 73%;
+            background: url('../Images/1366/bg-min.png');
+            background-position: center;
+            background-size: contain;
+            margin: auto;
+            position: relative;
+            top: 5%;
+            background-repeat: no-repeat;
+        }
+        .creditAmountText{
+            font-size: 1.6em;
+            padding: 0px 11% 2% 11%;
+                line-height: 24px;
+        }
+        .jackPointText {
+            font-size: 1.6em;
+            padding: 0px 12% 2% 12%;
+            line-height: 24px;
+        }
+        .afterSignupScreenPanel .addMoneyText {
+            font-size: 1.6em;
+            padding: 0 6% 0 6%;
+                line-height: 24px;
+            }
+        .afterSignLogo .jitoMoneyLogo {
+             width: 200px;
+             height: 170px;
+         }
+         .afterSignUpButtonPanel {
+                height: 30%;
+          }
+         .afterSignupFacebook {
+             height: 65px;
+             width: 70%;
+             margin: auto;
+          }
+         .afterSignupFacebook .answerButtonText {
+            font-size: 2em;
+            font-family: sans-serif;
+             padding: 8px;
+        }
+         .afterSignupFacebook .facebookWrapper .answerButtonText {
+                font-size: 1.1em;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 0 0 0 0;
+                    text-shadow: 2px 3px 2px #000;
+        }
+        .afterSignupAddMoney .answerButtonText {
+            font-family: sans-serif;
+            font-size: 2em;
+            text-shadow: 2px 3px 2px #000;
+            font-weight: bold;
+        }
+        .afterSignupAddMoney {
+            height: 55px;
+            width: 50%;
+            margin: 2% auto;
+        }
+        .afterSignupFacebook .facebookIconWrapper {
+            float: left;
+            width: 23%;
+        }
+         .afterSignupFacebook .facebookIconWrapper .facebookIcon {
+            margin: 0 2% 0 2%;
+            height: 50px;
+        }
+        .closeAfterSign {
+            background: url('../Images/closeicon.png');
+            height: 70px;
+            width: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: -2%;
+            right: -3%;
+        }
+}

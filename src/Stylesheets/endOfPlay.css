@@ -1,0 +1,119 @@
+.endOfPlayWrapper {
+    background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 5.5% 0 5.5% 0;
+}
+
+.endOfPlayMainView {
+    height: 100%;
+    width: 90%;
+    background: url('../Images/endOfPlayBackground.png') center no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.endOfPlayTopView {
+    width: 100%;
+    height: 19%;
+    padding: 2% 2% 1%;
+}
+
+.endOfPlayText {
+    font-size: 0.9em;
+    display: block;
+    line-height: 1.2;
+}
+
+.endOfPlayImages {
+    height: 100%;
+    width: 40%;
+    margin: auto;
+}
+
+.endOfPlayMiddleView {
+    height: 20%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 4em;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.endOfPlayBottomView {
+    height: 55%;
+    width: 100%;
+    margin: auto;
+}
+
+.endOfPlayInnerBottomView {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.endOfPlayInnerBottomLeftView {
+    height: 100%;
+    width: 30%;
+    margin: auto;
+    float: left;
+    background: url('../Images/endOfPlayPlayAgain.png') center no-repeat;
+    background-size: contain;
+    padding: 2% 0 0 0;
+}
+
+.endOfPlayInnerBottomMiddleView {
+    height: 100%;
+    width: 10%;
+    margin: auto;
+    float: left;
+}
+
+.endOfPlayInnerBottomRightView {
+    height: 100%;
+    width: 30%;
+    margin: auto;
+    float: left;
+    background: url('../Images/endOfPlayAnotherRoom.png') center no-repeat;
+    background-size: contain;
+    padding: 2% 0 0 0;
+}
+
+.endOfPlayInnerBottomMostLeftView {
+    width: 15%;
+    height: 100%;
+    margin: auto;
+    float: left;
+}
+
+.endOfPlayInnerBottomMostRightView {
+    width: 15%;
+    height: 100%;
+    margin: auto;
+    float: left;
+}
+
+.endOfPlayAgainImages {
+    margin: auto;
+    cursor: pointer;
+}
+  /* *************media rules for 1366 resolutions****************/
+    @media only screen and (max-width: 1366px) {
+        .endOfPlayWrapper{
+                padding: 3% 0 3% 0;
+        }
+        .endOfPlayText {
+            font-size: 0.6em;
+            display: block;
+            line-height: 1.2;
+        }
+        .endOfPlayAgainImages {
+            margin: auto;
+            cursor: pointer;
+            height: 50%;
+        }
+    }

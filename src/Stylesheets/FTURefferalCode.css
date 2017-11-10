@@ -1,0 +1,80 @@
+.FTURefferalCodeWrapper{
+    background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.FTURefferalCodePanel{
+    padding: 4% 8% 0 8%;
+    height: 90%;
+    width: 73%;
+    background: url('../Images/About_bg.png');
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    background-repeat: no-repeat;
+}
+.FTURefferalCodeLogo{
+    background:url('../Images/Paytable.png');
+    height: 20%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.FTURefferalCodeText{
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+    padding: 6% 0 6% 0;
+}
+.FTURefferalCodeInnerDiv{
+    height: 25%;
+}
+.codeWrapper{
+      width: 70%;
+    font-size: 4em;
+    margin: auto;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50%;
+    padding: 19px 0 0 0;
+
+}
+.codeText{
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.rCode{
+    width: 40%;
+    float: left;
+    text-align: left;
+}
+.refferCodeText{
+    text-align: center;
+    font-size: 3em;
+    color: #FFF;
+}
+.shareReferCodeButton{
+    background: url('../Images/Share.png');
+    height: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.closeReferelCode{
+    background: url('../Images/closeicon.png');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+    right: -3%;
+}

@@ -1,0 +1,54 @@
+.languageSelectionWrapper {
+    background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.popupLogolanguagePanel{
+    padding: 2% 8% 0 8%;
+    height: 90%;
+    width: 73%;
+    background: url('../Images/About_bg.png');
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    background-repeat: no-repeat;
+}
+.languageSelection{
+    height: 55%;
+    width: 75%;
+    margin: auto;
+    padding: 10% 0px 0px;
+}
+.languageLogo{
+    height: 25%;
+    background:url('../Images/account_balance_heading.png');
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.languageLogo .jitoMoneyLogo
+{       width: 370px;
+    height: 345px;
+}
+
+.languageType{
+        height: 45px;
+    margin: 6% auto;
+    width: 50%;
+}
+.languageSelection .answerButtonText {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.languageMessage{
+        color: #FFF;
+    font-size: 1.5em;
+        text-align: center;
+}

@@ -1,0 +1,21 @@
+.gameScreenButton{
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+.gameScreenButtonText{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 3em;
+    color: #FFF;
+}
+ @media only screen and (max-width: 1366px) {
+     .gameScreenButtonText{
+        font-size: 2em;
+    }
+ }
+
+.isDisabled{
+  pointer-events: none;
+}

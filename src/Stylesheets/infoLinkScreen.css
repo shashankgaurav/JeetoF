@@ -1,0 +1,37 @@
+.infoScreenBackground{
+  background: url('../Images/mainbackgroundminmin.jpg') no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%
+}
+
+.infoLinksContainer
+{
+  /* background: green; */
+  height: 65%;
+  padding: 5% 33% 5% 33%;
+}
+
+.infoLinksFooter
+{
+  /* background: pink; */
+  height: 15%;
+  text-align: right;
+  padding: 3% 2% 0 0;
+}
+
+
+.infoScreenFooter
+{
+  /* background: yellow; */
+  height: 20%;
+}
+
+.linkButtons
+{
+  padding: 5% 1% 1% 1%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+}

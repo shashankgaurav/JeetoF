@@ -1,0 +1,34 @@
+.unselectedBtn{
+    top:35%;
+    background: url('../Images/my_profile_button.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: 50%;
+    height: 100%;
+}
+
+.selectedBtn
+{
+    top:35%;
+    background: url('../Images/settings-selected.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 20%;
+    background-size: 100% 100%;
+    background-position: 50%;
+    height: 20%;
+}
+
+.settingsButtonText{
+    text-transform: uppercase;
+    padding: 2%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* .settingsBtnActive {
+    background-image: url('../Images/my_profile_button.png');
+  } */

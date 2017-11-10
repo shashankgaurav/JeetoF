@@ -1,0 +1,41 @@
+.cardButtonIndivisualPanel{
+    background:url('../Images/Jeeto-min.png');
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+.cardIndRuppes{
+    padding: 40% 0 0 0;
+    color: #ffff00;
+    font-size: 7em;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-shadow: 0px 5px 2px rgb(0, 0, 0);
+    -moz-text-shadow: 0px 5px 2px rgb(0, 0, 0);
+    text-shadow: 0px 5px 2px rgb(0, 0, 0);
+}
+.cardIndPlayers{
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 0px 5px 2px rgb(0, 0, 0);
+
+}
+.cardIndWinner{
+        text-align: center;
+         color: #ffff00;
+}
+.cardIndPlayer{
+    text-align: center;
+     color: #ffff00;
+}
+.questionButton{
+    background: url('../Images/QuestionMarkIcon.png');
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    right: -5%;
+    bottom: -3%;
+}

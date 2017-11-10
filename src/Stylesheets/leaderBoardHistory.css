@@ -1,0 +1,149 @@
+.leaderBoardHistoryWrapper{
+        background: url('../Images/gameScrenBg.jpg');
+ height: 100vh;
+    width: 100vw;
+    background-size: contain;
+}
+.leaderBoardPanel{
+    height: 98%;
+    background: url('../Images/account_balance_bg.png');
+     width: 98%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 1%;
+        padding: 2% 3% 0 3%;
+    /*padding: 2% 8% 0 8%;*/
+}
+.leaderBoardHistoryHeader{
+    height:12vh;
+    background: url('../Images/playHistory.png');
+        background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:45%;
+    margin:auto
+}
+.leaderBoardHistoryData{
+     height: 70vh;
+         padding: 0 5% 0 5%;
+}
+.leaderBoardHistoryPanelHeader{
+    height: 20%;
+    
+}
+
+.leaderBoardHistoryPanelRow .headerCol{
+width: 20%;
+    float: left;
+        text-align: center;
+            padding: 1% 0 0 0;
+            border-right: 1px solid;
+    height: 65px;
+}
+.leaderBoardHistoryPanelRow .headerCol:last-child{
+     border-right: none;
+}
+.leaderBoardHistoryPanelHeader .headerCol{
+        width: 20%;
+    float: left;
+        text-align: center;
+                padding: 0 5% 0 5%;
+}
+.leaderBoardImage{
+        height: 85px;
+}
+.backArrow{
+    height:100px;
+}
+.leaderBoardHistoryRowLeft{
+    width:90%;
+    float:left;
+    background: url('../Images/leaderBoardHistoryHeader.png');
+       color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+        padding: 2% 0 0 0;
+}
+.leaderBoardHistoryRowRight{
+    width:10%;
+    float:left;
+    height: 65px;
+}
+.leaderBoardHistoryPanelData .leaderBoardHistoryRowLeft{
+ background: url('../Images/transparent _patch_small.png');
+    background-position: center;
+    background-size: cover;
+    height: 65px;
+    color: #FFF;
+        font-size: 2.5em;
+        padding:0 0 0 0;
+}
+.leaderBoardHistoryPanelRow{
+    height: 60px;
+        margin: 3% 0px 3% 0;
+    
+}
+.leaderBoardHistoryPanelData{
+                overflow-y: auto;
+                    height: 75%;
+}
+.leaderBoardHistoryPanelRow{
+
+}
+.leaderBoardHistoryRowLeft .headerCol:first-child{
+        padding: 1% 0 0 0;
+}
+@media only screen and (max-width: 1366px) {
+   .leaderBoardHistoryRowLeft {
+        width: 90%;
+        font-size: 2em;
+            background-size: cover;
+                padding: 1% 0 0 0;
+   }
+   .backArrow {
+    height: 81px;
+    }
+    .leaderBoardHistoryPanelData .leaderBoardHistoryRowLeft{
+        width:90%;
+        font-size: 1.5em;
+         height: 45px;
+    }
+    .leaderBoardHistoryData{
+            padding: 0% 0 0 0;
+    }
+    .leaderBoardHistoryPanelData{
+        width:100%;
+    }
+    .leaderBoardHistoryPanelRow .headerCol{
+       height: 45px;
+    }
+    .leaderBoardHistoryRowRight{
+            height: 45px;
+    }
+    .leaderBoardImage {
+        height: 55px;
+    }
+    .leaderBoardHistoryPanelRow {
+        height: 45px;
+        margin: 1% 0px 2% 0;
+    }
+    .leaderBoardPanel{
+       background-size: cover;
+           padding: 2% 6% 0 6%;
+    }
+    .leaderBoardHistoryPanelHeader .headerCol {
+        padding: 0 6% 0 6%;
+    }
+    .leaderBoardHistoryRowLeft{
+        background: url('../Images/1366/Group 20.png');
+        background-size: cover;
+    }
+}

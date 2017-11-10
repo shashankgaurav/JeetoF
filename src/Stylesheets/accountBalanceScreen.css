@@ -1,0 +1,25 @@
+
+.accountBalanceContainer{
+    background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.middleScreen{
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    top: 10%;   
+}
+
+.accountBalanceHeader
+{
+    text-align: center; 
+    display: block;
+    position:absolute;
+    top: 0; 
+    left: 30%;
+}

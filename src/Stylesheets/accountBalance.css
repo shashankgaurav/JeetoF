@@ -1,0 +1,327 @@
+.accountBalanceScreen {
+    background: url('../Images/loginBackground.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: 100% 100%;
+    background-size: cover;
+    padding: 1%
+}
+
+.accountBalanceMainDiv {
+    background: url('../Images/accountBalanceBg.png') center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    margin: auto;
+}
+
+.accountBalanceInnerDiv {
+    width: 100%;
+    height: 100%;
+    padding: 0% 3% 0% 3%;
+}
+
+.accountBalanceTopDiv {
+    width: 100%;
+    height: 18%;
+    text-align: center;
+    padding: 2% 0% 0% 0%;
+    margin:0 0 1% 0;
+}
+
+.accountBalanceMiddleDiv {
+    width: 100%;
+    height: 60%;
+}
+
+.accountBalanceBottomDiv {
+    width: 100%;
+    height: 20%;
+}
+
+.accountBalanceImages {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+
+.accBalance {
+    height: 15%;
+    width: 80%;
+    margin: auto;
+}
+
+.accBalanceLeft {
+    height: 80%;
+    width: 65%;
+    padding: 1% 0% 0.5% 0%;
+    background: url('../Images/transparent_patch_small.png') center no-repeat;
+    background-size: cover;
+    text-align: center;
+    float:left;
+      font-size: 1.7em;
+
+}
+
+.accBalanaceTransparentPatchSmall {
+    height: 100%;
+    width: 80%;
+    float: right;
+}
+.accBalanaceTransparentPatchBig {
+    height: 100%;
+    width: 80%;
+    position: relative;
+}
+.accUserAccount {
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    /*padding: 0.5% 0% 0.5% 0%;*/
+}
+.accUserAccountOuterDiv {
+    height: 100%;
+    width: 80%;
+    /*background: url('../Images/transparent_patch_big.png') center no-repeat;*/
+    background-size: contain;
+    margin: auto;
+}
+
+.accBalanceLeftTextFrist {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.accBalanceLeftTextLeftSide {
+    height: 100%;
+    width: 50%;
+    float: left;
+    color: #fff;
+    font-size: 1.7em;
+    text-align: left;
+}
+
+.accBalanceLeftTextRightSide {
+    width: 30%;
+    height: 100%;
+    float: left;
+    color: #fff;
+    font-size: 1.7em;
+    text-align: left;
+}
+
+.accUserAccountLeft {
+    height: 100%;
+    width: 65%;
+    padding: 0.8% 0% 0% 0%;
+    float: left;
+    background: url('../Images/transparent_patch_big.png') center no-repeat;
+    background-size:contain;
+}
+
+.accUserAccountRight {
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+
+.accUserAccountLeftTextFirst {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.accUserAccountLeftTextLeftSide {
+    height: 100%;
+    width: 50%;
+    float: left;
+    color: #fff;
+    font-size: 1.7em;
+    text-align: left;
+}
+
+.accUserAccountLeftTextRightSide {
+    height: 100%;
+    width: 30%;
+    float: left;
+    color: #fff;
+    font-size: 1.7em;
+    text-align: left;
+}
+
+.accUserAccountRightLeftSide {
+    height: 80%;
+    width: 100%;
+    float: left;
+    padding: 0.8%;
+}
+
+.accUserAccountRightRightSide {
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+
+
+
+.accBalanceLeftTextFrist {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.accBalanceLeftTextLeftSide {
+    height: 100%;
+    width: 50%;
+    float: left;
+    color: #fff;
+    font-size: 1.7em;
+    text-align: left;
+}
+
+.accBalanceLeftTextRightSide {
+    width: 30%;
+    height: 100%;
+    float: left;
+    color: #fff;
+    font-size: 1.7em;
+    text-align: left;
+}
+.accUserAccountNotesLeft{
+    height: 100%;
+    width: 10%;
+    float: left;
+}
+.accUserAccountNotesMiddle{
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: left;
+    font-size: 2em;
+    color: #fff;
+}
+.accUserAccountNotesLast{
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+.accUserAccountNotesOuterDiv {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.accUserAccountNotes {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+.accountBalanceBottomFirst{
+    height: 40%;
+    width: 80%;
+    margin: auto;
+}
+.accountBalanceBottomLast{
+    height: 60%;
+    width: 100%;
+    margin: auto;
+}
+.accountBalanceBottomLeft{
+    height: 100%;
+    width: 49%;
+    float: left;
+    padding: 0.4%;
+}
+.accountBalanceBottomRight{
+    height: 100%;
+    width: 49%;
+    float: left;
+    padding: 0.4%;
+}
+.accountBalanceBottomMiddle{
+    height: 100%;
+    width: 2%;
+    float: left;
+}
+.accountBalanceBottomLastLeft{
+    height: 100%;
+    width: 20%;
+    float: left;
+    padding: 0% 0% 1% 1%;
+}
+.accountBalanceBottomLastMiddle{
+    height: 100%;
+    width: 60%;
+    float: left;
+    /* padding: 1%; */
+}
+.accountBalanceBottomLastMiddleInner
+{
+    height: 60%;
+    width: 100%;
+    margin-top: 1%;
+}
+.accountBalanceBottomLastRight{
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+.accountBalanceBackBtnImages{
+    height: 100%;
+    cursor: pointer;
+}
+.accountDetailsMoneyText{
+    color: yellow;
+    font-weight: bold;
+}
+.upperCase{
+    text-transform: uppercase;
+}
+.accBalanceBottomLeft{
+    height: 80%;
+    width: 80%;
+    padding: 0.5% 0% 0.5% 0%;
+    background: url('../Images/transparent_patch_small.png') center no-repeat;
+    background-size: cover;
+    text-align: center;
+    float:left;
+    font-size: 1.7em;
+}
+.accUserAccount .answerButtonText{
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgb(0, 0, 0),2px 2px 1px rgb(0, 0, 0);
+        padding: 2% 0 0 0;
+}
+.accountBalanceBottomDiv .answerButtonText{
+    font-size: 2.7em;
+    font-weight: bold;
+    padding: 1% 0 0 0;
+      text-shadow: 1px 1px 0 rgb(0, 0, 0),2px 2px 1px rgb(0, 0, 0);
+}
+.accBalanceBottomLeft .accBalanceLeftTextLeftSide{
+    width:100%;
+    text-align: center;
+}
+.number{
+    color:yellow;
+}
+@media only screen and (max-width: 1366px) {
+    .accBalanceLeft{
+            font-size: 1.2em;
+            padding: 0% 0% 0.5% 0%;
+    }
+    .accUserAccount .answerButtonText {
+           font-size: 1.6em;
+           padding: 1% 0 0 0;
+        }
+       .accUserAccountNotesMiddle {
+            font-size: 1.5em;
+        }
+        .accBalanceBottomLeft .accBalanceLeftTextLeftSide {
+            font-size: 1.1em;
+        }
+        .accountBalanceBottomDiv .answerButtonText {
+            font-size: 1.7em;
+        }
+}
