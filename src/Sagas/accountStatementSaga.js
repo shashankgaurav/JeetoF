@@ -8,9 +8,10 @@ import { read_cookie } from 'sfcookies';
 import {API_URL}  from '../constants';
 import ERROR_CODE from '../errorCodes'
 
-let cookeiesdata = read_cookie('cookeiesdata')
+
 
 export function * getUserAccountStatement (accStateData) {
+  let cookeiesdata = read_cookie('cookeiesdata')
 console.log("saga",accStateData.accountStatementData.accountType)
     let headersdata = {
       Authorization: cookeiesdata.userdetailsStore.header.authorization
@@ -25,7 +26,6 @@ console.log("saga",accStateData.accountStatementData.accountType)
       if ( response.data.messageCode === 'ASL001') {
         let userAccData = response.data.data
         let jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb')
-        console.log("sdsad",jeetomoneystore.jeetomoney.userBankDetails)
         let jeetoMoneyData = {
           userdata: jeetomoneystore.jeetomoney.userdata,
           metadata: jeetomoneystore.jeetomoney.metadata,
@@ -35,9 +35,8 @@ console.log("saga",accStateData.accountStatementData.accountType)
         reactLocalStorage.setObject('jeetomoneydataweb', {
           jeetomoney: jeetoMoneyData
         })
-        yield call(delay, 5000)
-        let status=true
-        yield put({ type: 'ACCOUNT_DATA',status})
+        // let status=true
+        yield put({ type: 'ACCOUNT_DATA',userAccData})
         yield put(push('/AccountStatement'))
       }
     } catch (error) {

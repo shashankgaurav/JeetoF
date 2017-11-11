@@ -6,7 +6,7 @@ import shareBtn from '../Images/shareReferralCode.png';
 import notificationHeaderImg from '../Images/notificationHeader.png';
 import notificationBackBtn from '../Images/notificationBackBtnMin.png';
 import myPerformanceHeaderImg from '../Images/myPerformance.png';
-import userProfileImg from '../Images/IMG_5368.JPG';
+// import userProfileImg from '../Images/IMG_5368.JPG';
 import multiplayerImage from '../Images/multiplayerImage.png';
 import singleplayerImage from '../Images/singleplayerImage.png';
 import myProfile from '../Images/myProfile.png';
@@ -32,7 +32,7 @@ class LargeBackgroundComponent extends Component {
       console.log("notification componentDidMount")
       this.props.notificationAction();
     }
-  
+
     componentWillReciveProps = () => {
       console.log("hello shital its notification");
     }
@@ -41,9 +41,7 @@ class LargeBackgroundComponent extends Component {
       Router.browserHistory.push('/HomeScreen')
     }
 
-    goToBackScreen = () => {
-      this.props.router.push('/HomeScreen');
-}
+
 
 
     renderScreenConditionaly () {
@@ -74,7 +72,7 @@ class LargeBackgroundComponent extends Component {
       let allNotifications = this.props.notificationResponse.rows;
       let notificationList
 
-    
+
       if(this.props.notificationResponse.length!=0)
       {
         notificationList = allNotifications.map((item, i)=>{
@@ -85,7 +83,7 @@ class LargeBackgroundComponent extends Component {
           </div>
         )})
       }
-      
+
       return(
       <div>
               <div className='row notificationHeader'>
@@ -132,14 +130,14 @@ class LargeBackgroundComponent extends Component {
                   <div className='row transparent_bg'>
                     <div className='col-lg-9 col-md-9 col-sm-9 col-xs-9 notificationTitle'>10 Bonus points added to your account</div>
                     <div className='col-lg-3 col-md-3 col-sm-3 col-xs-3 notificationTime'>1 hr ago</div>
-                  </div>
+            /home/jitendra/main/JeetoMoneyWebsite/src/Images/IMG_5368.JPG      </div>
                   <div className='row transparent_bg'>
                     <div className='col-lg-9 col-md-9 col-sm-9 col-xs-9 notificationTitle'>10 Bonus points added to your account</div>
                     <div className='col-lg-3 col-md-3 col-sm-3 col-xs-3 notificationTime'>1 hr ago</div>
                   </div> */}
               </div>
               <div className='row notificationBackBtn'>
-                <img src={notificationBackBtn} onClick = {this.goToBackScreen}/>
+                <img src={notificationBackBtn} onClick = {this.handleOnclick}/>
               </div>
       </div>
       )

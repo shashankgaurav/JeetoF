@@ -175,44 +175,52 @@
     margin: auto;
     float: right;
 }
-.withdrawVerificationEmailMiddleNotVerifiedText{
-  color: #ff3535;
+
+.withdrawVerificationEmailMiddleNotVerifiedText {
+    color: #ff3535;
 }
-.withdrawVerificationPanCardInnerDiv{
+
+.withdrawVerificationPanCardInnerDiv {
     width: 90%;
     height: 100%;
     padding: 1% 5% 0% 5%;
     margin: auto;
 }
-.withdrawVerificationinputLabel{
+
+.withdrawVerificationinputLabel {
     color: #ffffff;
     /* padding: 1%; */
     font-size: 1.5em;
 }
-.withdrawVerificationInputSuggestion{
+
+.withdrawVerificationInputSuggestion {
     color: #ffffff;
     font-size: 1.2em;
-    
 }
-.withdrawVerificationselectBox{
+
+.withdrawVerificationselectBox {
     border-radius: 0 !important;
     box-shadow: 2px 3px 14px #888 inset !important;
 }
-.withdrawVerificationPanCardSubmission{
+
+.withdrawVerificationPanCardSubmission {
     width: 30%;
     height: 10%;
     margin: auto;
 }
-.withdrawVerificationBankAccountSubmitDiv{
+
+.withdrawVerificationBankAccountSubmitDiv {
     width: 30%;
     height: 10%;
     margin: auto;
     margin-top: 2%;
 }
-.image-preview{
+
+.image-preview {
     width: 100%;
 }
-.image-preview-filename{
+
+.image-preview-filename {
     width: 100%;
     height: 32px;
     border-right: 0;
@@ -220,9 +228,10 @@
     background-color: #fff;
     border: 0;
 }
+
 .image-preview-input {
     overflow: hidden;
-	margin: 0px;    
+    margin: 0px;
     color: #333;
     margin-top: -5px;
     border: 0;
@@ -230,27 +239,56 @@
     border-radius: 0;
     margin-left: -1px;
 }
+
 .image-preview-input input[type=file] {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	cursor: pointer;
-	opacity: 0;
-	filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
-.withdrawInputBtn{
+
+.withdrawInputBtn {
     position: absolute;
     width: 10px;
     display: block;
     top: 7px;
     right: 75px;
 }
-.withdrawInputBtn .btn.btn-default:hover{
+
+.withdrawInputBtn .btn.btn-default:hover {
     background-color: transparent
 }
+
 .image-preview-input-title {
-    margin-left:2px;
+    margin-left: 2px;
 }
+
+::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url('../Images/calendarIcon.png') no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    margin-right: -2%;
+}
+/* 
+input[type=date].form-control::after {
+    content: '';
+    display: block;
+    background: url('../Images/calendarIcon.png') no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    transform: translateX(-2%);
+    right: 3%;
+    z-index: 1
+} */

@@ -7,6 +7,8 @@ import WithdrawMoneyImage from '../Images/withdrawMoney.png'
 import SubmitButton from '../Components/answerButton'
 import {withdrawMoneyAction} from '../Actions/withdrawMoneyAction'
 import { reactLocalStorage } from 'reactjs-localstorage'
+import PopUpBox from './popUpBox.js'
+
 let thisRef = ''
 
 let jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb');
@@ -16,36 +18,60 @@ class WithdrawMoney extends Component {
   constructor (props) {
     super(props)
     thisRef = this
-    thisRef.state = { withdrawMoneyshow: false,withdrawMoneyButton:'WITHDRAW' }
+    thisRef.state = { withdrawMoneyshow: false,
+      withdrawMoneyButton:'WITHDRAW',
+      alertBoxshow:false,
+      msg:''
+    }
   }
   componentWillMount () {
-    userData=jeetomoneystore.jeetomoney.userdata;
-    console.log(userData);
+    userData = jeetomoneystore.jeetomoney.userdata;
+  }
+  componentWillReceiveProps (){
+    if (thisRef.props.withdrawError)
+    {
+      thisRef.setState({ msg: thisRef.props.withdrawError[0], alertBoxshow: true})
+    }
   }
 
   onClick (e) {
     e.preventDefault()
     thisRef.setState({ withdrawMoneyshow: !thisRef.state.withdrawMoneyshow })
   }
-  handleWithdrawAmountChange(event)
+  handleWithdrawAmountChange (event)
   {
     thisRef.setState({ [event.target.name]: event.target.value })
   }
-  handleWithdrawAmountSubmit(event)
+  handleWithdrawAmountSubmit (event)
   {
     event.preventDefault()
-    if(thisRef.state.withdrawAmount>=200)
+    if (thisRef.state.withdrawAmount>=200)
     {
       thisRef.props.withdrawMoneyAction(thisRef.state)
     }
-    else{
-        alert("Minimum withdraw amount is Rs.200")
+    else {
+      let rupee='	\u20B9';
+      thisRef.setState({ msg: "Minimum withdraw amount is" + rupee + " 200", alertBoxshow: true})
+    }
+  }
+  renderPopup () {
+    if (thisRef.state.alertBoxshow) {
+      return (
+        <PopUpBox
+          message={this.state.msg}
+          onPress={() => thisRef.setState({ alertBoxshow: false })}
+          alertType={'alertType'}
+        />
+      )
+    } else {
+      ;<span />
     }
   }
   
   render () {
     return (
       <div className='withdrawMoneyPopupContainer'>
+        {this.renderPopup()}
         <div className='withdrawMoneyPopupView'>
           <div className='withdrawMoneyMainDiv'>
             <div className='withdrawMoneyInnerDiv'>
@@ -118,7 +144,7 @@ class WithdrawMoney extends Component {
 }
 function mapStateToProps (state) {
   return {
-    // email: state.emailVerify
+    withdrawError: state.withdrawError
   }
 }
 

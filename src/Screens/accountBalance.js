@@ -19,8 +19,7 @@ import { getProfileData } from '../Actions/homeScreenAction'
 const Router = require('react-router')
 let thisRef=''
 let jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb');
-console.log(jeetomoneystore);
-// let userAccountBalanceDetails=[]
+let userAccountBalanceDetails=[]
 // console.log("jeeto",jeetomoneystore.jeetomoney.userdata.masterPlayerGameAccountDetails);
 class AccountBalance extends Component {
   constructor (props) {
@@ -46,13 +45,16 @@ class AccountBalance extends Component {
     }
   }
   componentWillReceiveProps () {
-    let userAccountBalanceDetails=jeetomoneystore.jeetomoney.userdata.masterPlayerGameAccountDetails;
+    this.props.getProfileData()
+    jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb');
+     userAccountBalanceDetails=jeetomoneystore.jeetomoney.userdata.masterPlayerGameAccountDetails;
     if(thisRef.props.withdrawMoney.withdrawMoneyData)
     {
       if(thisRef.props.withdrawMoney.withdrawMoneyData.Status===true)
         {
+          let rupee='	\u20B9';
           let withdrawAmount=thisRef.props.withdrawMoney.withdrawMoneyData.withdrawMoneyResponse.withdrawal_amount;
-          let txt1='Your request to withdraw Rs200 has been accepted.'
+          let txt1="Your request to withdraw" + rupee +" "+withdrawAmount+ " has been accepted."
           let txt2='The same will be processed within 10 days.The withdrawal amount will be credited to your provided bank account subject to any applicable income tax deduction.'
           thisRef.setState({ withdrawMoneyshow: false,
             withdrawMoneyConfirmationshow: true,
@@ -66,6 +68,8 @@ class AccountBalance extends Component {
   }
   componentWillMount () {
     this.props.getProfileData()
+    jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb');
+     userAccountBalanceDetails=jeetomoneystore.jeetomoney.userdata.masterPlayerGameAccountDetails;
   }
   addMoney = () => {
     thisRef.setState({show:true})
@@ -171,7 +175,6 @@ class AccountBalance extends Component {
   }
 
   render () {
-    let userAccountBalanceDetails=jeetomoneystore.jeetomoney.userdata.masterPlayerGameAccountDetails;
     
     return (
       <div className='container-fluid accountBalanceScreen'>
@@ -309,7 +312,7 @@ class AccountBalance extends Component {
               </div>
               <div className="accountBalanceBottomLast">
                     <div className="accountBalanceBottomLastLeft">
-                    <img src={Backbtn} className='accountBalanceBackBtnImages img img-responsive'
+                    <img src={Backbtn} className='accountBalanceBackBtnImages img img-responsive' onClick={this.homeBtnChange}
               />
                     </div>
                     <div className="accountBalanceBottomLastMiddle">

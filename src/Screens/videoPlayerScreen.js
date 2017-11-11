@@ -38,6 +38,18 @@ componentDidMount(){
 
 componentWillMount(){
   this.setState({timer: 0, percent: 0});
+  // window.addEventListener("beforeunload", this.refresh());
+}
+
+// componentWillUnmount (){
+//   window.removeEventListener("beforeunload", this.refresh());
+// }
+
+refresh = () => {
+  window.onbeforeunload = function() {
+    alert("ALERT!")
+    Router.browserHistory.push('/HomeScreen')
+  }
 }
 
  duration = (time_in_sec) => {
@@ -50,10 +62,12 @@ componentWillMount(){
    });
   }
 
+  timerStart = () => {
+  }
+
   videoTimer = () => {
     if (this.state.timer > 0) {
       let x = _.round(parseInt(this.state.timer) - 1, 0);
-      console.log("line 56", this.state.percent, percentInc);
       this.setState({timer: x, percent: this.state.percent + percentInc});
 
     } else {
@@ -127,7 +141,6 @@ redirect = () => {
 
   render () {
     const video = this.props.video;
-    console.log(this.props);
     return (
       <div className='videoPlayerScreenWrapper'>
           <div className='videoPlayerScreenTopView'>
@@ -149,7 +162,9 @@ redirect = () => {
                         height = {'100%'}
                         width = {'100%'}
                         onDuration = {this.duration}
+                        onStart = {this.duration}
                         onEnded = {this.redirect}
+
               />
           </div>
       </div>

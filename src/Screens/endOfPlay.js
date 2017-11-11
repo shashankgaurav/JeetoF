@@ -28,7 +28,8 @@ handlePlay = () => {
                       const numberOfQuestions = jeetomoneydata.jeetomoney.numberOfQuestions;
                       const currentBalance = jeetomoneydata.jeetomoney.total_account_balance;
                       const updatedBalance = (jeetomoneydata.jeetomoney.total_account_balance) - (this.props.room)
-                    if(currentBalance > this.props.room){
+                      console.log(jeetomoneydata,currentBalance, updatedBalance);
+                    // if(currentBalance > this.props.room){
                               let quiz_url = API_URL+'/v1/getVideoForQuiz/' + jeetomoneydata.jeetomoney.quizPayload.playerId + '/language/1/quizID/' +  this.state.quizId  + '/roomType/' + jeetomoneydata.jeetomoney.quizPayload.roomType;
                               let fullQuestionArray = [];
                               for(let i = 0; i < numberOfQuestions; i++) {
@@ -58,10 +59,10 @@ handlePlay = () => {
                               reactLocalStorage.setObject('jeetomoneydataweb', {'jeetomoney': jeetomoney12345});
                               this.props.getQuizAction(quiz_url);
                               setTimeout(()=>{Router.browserHistory.push('/VideoPlayerScreen')}, 500)
-                    }else{
-                              alert("You Don't have enough balance. Please add money to your account");
-                              setTimeout(()=>{Router.browserHistory.push('/RoomSelectionScreen')}, 500)
-                    }
+                    // }else{
+                    //           alert("You Don't have enough balance. Please add money to your account");
+                    //           setTimeout(()=>{Router.browserHistory.push('/RoomSelectionScreen')}, 500)
+                    // }
 
 }
 

@@ -11,8 +11,7 @@ import ERROR_CODE from '../errorCodes'
 let cookeiesdata = read_cookie('cookeiesdata')
 
 export function * withdrawMoneyRequest (withdrawMoneyRequestData) {
-console.log("saga",withdrawMoneyRequestData.withdrawMoneyData.withdrawAmount)
-    let headersdata = {
+let headersdata = {
       Authorization: cookeiesdata.userdetailsStore.header.authorization
     }
     try {

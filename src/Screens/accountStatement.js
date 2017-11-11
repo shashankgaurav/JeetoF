@@ -10,11 +10,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { userAccountStatementAction } from '../Actions/accountStatementAction'
 import { reactLocalStorage } from 'reactjs-localstorage'
 const Router = require('react-router')
+let jeetomoneystore
 let thisRef = ''
-let jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb')
 // console.log(jeetomoneystore.jeetomoney.userAccountStatement.rows)
 // let dataa = jeetomoneystore.jeetomoney.userAccountStatement.rows;
-
+let dataa=''
 
 class AccountStatement extends Component {
   constructor (props) {
@@ -25,7 +25,8 @@ class AccountStatement extends Component {
       accountType: 'User'
     }
   }
-  componentWillMount(){
+  componentWillMount () {
+    console.log(thisRef.props)
     thisRef.setState(
       {
         accountType: 'User'
@@ -34,9 +35,10 @@ class AccountStatement extends Component {
         thisRef.props.userAccountStatementAction(thisRef.state)
       }
     )
+    jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb')
   }
   componentWillReceiveProps () {
-    console.log("props",thisRef.props);
+    jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb') 
   }
   changeUserAccountEvent () {
     thisRef.setState(
@@ -51,7 +53,7 @@ class AccountStatement extends Component {
   changeBonusAccountEvent () {
     thisRef.setState(
       {
-        accountType: 'bonus'
+        accountType: 'Bonus'
       },
       function () {
         thisRef.props.userAccountStatementAction(thisRef.state)
@@ -77,13 +79,12 @@ class AccountStatement extends Component {
   }
 
   render () {
-    let Lists=''
-    console.log(jeetomoneystore.jeetomoney)
-    console.log(typeof(jeetomoneystore.jeetomoney.userAccountStatement));
-    if(true)
-    {
-      let dataa = jeetomoneystore.jeetomoney.userAccountStatement.rows
-  
+   if(jeetomoneystore.jeetomoney.userAccountStatement == undefined){
+    dataa = []
+   }else{
+    dataa = jeetomoneystore.jeetomoney.userAccountStatement.rows
+     
+   }
     
     const Lists = dataa.map((item, i) => {
      let returnText
@@ -111,7 +112,7 @@ class AccountStatement extends Component {
         )
       }
     }
-    else if(item.account_type==='bonus')
+    else if(item.account_type==='Bonus')
     {
         if (item.rs1000_jackpot_free_entries > 0) {
           returnText = (
@@ -152,8 +153,7 @@ class AccountStatement extends Component {
       }
 
     }
-
-      return (
+     return (
         <div className='accountStatementUserAccountDataMainDiv' id={i}>
           <div className='accountStatementUserAccountData'>
             <div className='accountStatementUserAccountText'>
@@ -163,7 +163,7 @@ class AccountStatement extends Component {
         </div>
       )
     })
-  }
+
     
     return (
       <div className='container-fluid accountStatementScreen'>

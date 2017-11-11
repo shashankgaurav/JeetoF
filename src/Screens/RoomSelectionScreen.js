@@ -9,6 +9,7 @@ import '../App.css'
 import '../Stylesheets/RoomSelectionScreen.css'
 import '../Stylesheets/header.css'
 import '../Stylesheets/roomSelectionButton.css'
+const Router = require('react-router');
 
 class RoomSelectionScreen extends Component {
   constructor (props) {
@@ -18,8 +19,12 @@ class RoomSelectionScreen extends Component {
       buttonName: 'Next'
     }
   }
+
+
+
   render () {
-    console.log(this.props)
+
+
     return (
       <div className='container-fluid mainBackground'>
         <div className='wrapper'>

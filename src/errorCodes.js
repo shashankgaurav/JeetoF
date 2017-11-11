@@ -32,6 +32,10 @@ export default{
     USR101:'User token expired',
     USR028:'User already verified',
     USR029:'OTP regenerated',
-    USR030:'insufficient balance'
+    USR030:'insufficient balance',
+    WDR001:'Withdraw request initiated successfully',
+    WDR002:'Withdraw request initiation failed',
+    WDR003:'Inssuficient balance',
+    WDR004:'failed to deduct the balance'
     
 }

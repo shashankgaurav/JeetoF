@@ -12,7 +12,9 @@ import VerifyEmailId from '../Components/verifyEmailId'
 import WithdrawEmailVerification from '../Components/withdrawEmailVerificationPopup'
 import { reactLocalStorage } from 'reactjs-localstorage'
 import {submitPhoneChangeRequest,submitPanCardForm,submitBankDetailForm,getBankDetailsData} from '../Actions/withdrawVerificationAction'
+import moment from 'moment';
 const Router = require('react-router')
+var DatePicker = require("react-bootstrap-date-picker");
 
 
 let thisRef = ''
@@ -25,7 +27,7 @@ let bank_Branch_Name='';
 let account_number='';
 let account_holder_name='';
 let ifsc_code='';
-let jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb');
+let jeetomoneystore;
 
 class WithdrawVerification extends Component {
   constructor (props) {
@@ -46,17 +48,23 @@ class WithdrawVerification extends Component {
       // panNumber:'',
       // stateTerritory:''
     }
-    
-
-    // console.log("pan name",pan_card_full_name);
   }
   componentWillMount(){
     this.props.getBankDetailsData()
-    this.setState({userBankDetails:jeetomoneystore.jeetomoney.userBankDetails}, ()=>{
-      
-    })
+    jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb')
+    // this.setState({userBankDetails:jeetomoneystore.jeetomoney.userBankDetails}, ()=>{
+    // })
+    let dateval=moment(userBankDetails.date_of_birth).format("YYYY-MM-DD")
+    if(dateval!=undefined)
+    {
+    this.setState({dateOfBirth:dateval})
+    }
   }
+  
   componentWillReceiveProps () {
+    jeetomoneystore = reactLocalStorage.getObject('jeetomoneydataweb')
+    let dateval=moment(userBankDetails.date_of_birth).format("YYYY-MM-DD")
+    this.setState({dateOfBirth:dateval})
     if(this.props.email)
     {
       if(this.props.email.Success===true)
@@ -66,6 +74,8 @@ class WithdrawVerification extends Component {
           })
         }
     }
+    
+    
   }
   verifyEmail = () => {
     thisRef.setState({ verifyEmailshow: true })
@@ -112,6 +122,11 @@ class WithdrawVerification extends Component {
   }
   handlePanCardSubmit (event) {
     event.preventDefault()
+    if(thisRef.state.dateOfBirth)
+    {
+     thisRef.state.dateOfBirth = moment(thisRef.state.dateOfBirth).format("DD/MM/YYYY")
+    }
+    
     thisRef.props.submitPanCardForm(thisRef.state)
   }
   handleBankDetailsChange (event) {
@@ -125,27 +140,29 @@ class WithdrawVerification extends Component {
     Router.browserHistory.push('/AccountBalance') 
   }
   selectBox(){
-  //   let userBankDetails=jeetomoneystore.jeetomoney.userBankDetails;
-  //  let datateri = ['MH','UP','JK','MP'];
-  // let resultstate = userBankDetails[0].date_of_birth;
-
+   let datateri = ['MH','UP','JK','MP'];
+  let Lists = datateri.map((item, i) => {
     return(
+    <option value={item} key={i} selected={userBankDetails.territory==item}>{item}</option>
+    )
+   })
+  return(
     <select className='form-control withdrawVerificationselectBox' name='stateTerritory' value={this.state.stateTerritory} onChange={this.handlePanCardChange}>
     <option></option>
-    {/* const Lists = datateri.map((item, i) => {       
-        console.log({i});
-        console.log({item})
-          // {{item}==resultstate ? '<option selected>'+{item}+'</option>' : '<option>'+{item}+'</option>'}
-        
-      } */}
-      )
+    {Lists}
   </select>
   )
   }
 // {/* onClick={this.withdrawEmailVerification} */}
   render () {
+    if(jeetomoneystore.jeetomoney.userBankDetails==undefined)
+    {
+      userBankDetails=[]
+    }
+    else{
+      userBankDetails=jeetomoneystore.jeetomoney.userBankDetails
+    }
     let UserData=jeetomoneystore.jeetomoney.userdata;
-    console.log("jeto",jeetomoneystore);
     return (
       <div className='container-fluid withdrawVerificationScreen'>
         <div className='withdrawVerificationMainDiv'>
@@ -185,13 +202,15 @@ class WithdrawVerification extends Component {
                         </div>
                         <div className='withdrawVerificationPhoneMiddle'>
                           <div className='withdrawVerificationPhoneMiddleText'>
-                            <text className={UserData.is_phone_verified? 'withdrawVerificationPhoneMiddleVerifiedText':'withdrawVerificationPhoneMiddleNotVerifiedText'}>
+                          {UserData.is_phone_verified ? <text className='withdrawVerificationPhoneMiddleVerifiedText'>VERIFIED</text> 
+                            : <text className='withdrawVerificationPhoneMiddleNotVerifiedText'>NOT VERIFIED</text> }
+                          {/* <text className={UserData.is_phone_verified? 'withdrawVerificationPhoneMiddleVerifiedText':'withdrawVerificationPhoneMiddleNotVerifiedText'}>
                             VERIFIED
                             </text>
                             <text> / </text>
                             <text className={UserData.is_phone_verified? 'withdrawVerificationPhoneMiddleNotVerifiedText':'withdrawVerificationEmailMiddleNotVerifiedText'}>
                               NOT VERIFIED
-                            </text>
+                            </text> */}
                           </div>
                         </div>
                         <div className='withdrawVerificationPhoneRight'>
@@ -213,13 +232,13 @@ class WithdrawVerification extends Component {
                         </div>
                         <div className='withdrawVerificationPhoneMiddle'>
                           <div className='withdrawVerificationPhoneMiddleText'>
-                          <text className={UserData.is_email_verified? 'withdrawVerificationPhoneMiddleVerifiedText':'withdrawVerificationPhoneMiddleNotVerifiedText'}>
-                            VERIFIED
-                            </text>
-                            <text> / </text>
+                            {UserData.is_email_verified ? <text className='withdrawVerificationPhoneMiddleVerifiedText'>VERIFIED</text> 
+                            : <text className='withdrawVerificationPhoneMiddleNotVerifiedText'>NOT VERIFIED</text> }
+                          
+                            {/* <text> / </text>
                             <text className={UserData.is_email_verified? 'withdrawVerificationPhoneMiddleNotVerifiedText':'withdrawVerificationEmailMiddleNotVerifiedText'}>
                               NOT VERIFIED
-                            </text>
+                            </text> */}
                           </div>
                         </div>
                         <div className='withdrawVerificationPhoneRight'>
@@ -257,11 +276,11 @@ class WithdrawVerification extends Component {
                                 id='exampleFormControlInput1'
                                 name='fullName'
                                 onChange={this.handlePanCardChange}
-                                placeholder={this.state.userBankDetails[0].pan_card_full_name}
+                                placeholder={userBankDetails.pan_card_full_name}
                               />
                               <div>
                                 <text className='withdrawVerificationInputSuggestion'>
-                                  Your name must match the name on your pan CARD & Bank Account.
+                                  Your name must match the name on your pan CARD.
                                 </text>
                               </div>
                             </div>
@@ -287,7 +306,7 @@ class WithdrawVerification extends Component {
                                 className='form-control'
                                 id='exampleFormControlInput1'
                                 name='fatherName'
-                                placeholder={this.state.userBankDetails[0].pan_card_father_name}
+                                placeholder={userBankDetails.pan_card_father_name}
                                 onChange={this.handlePanCardChange}
                               />
                             </div>
@@ -305,6 +324,7 @@ class WithdrawVerification extends Component {
 
                             </div>
                           </div>
+                          
                           <div className='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
                             <div className='form-group'>
                               {/* <DatePicker onChange={this.onChange} /> */}
@@ -313,7 +333,7 @@ class WithdrawVerification extends Component {
                                 className='form-control'
                                 id='exampleFormControlInput1'
                                 name='dateOfBirth'
-                                value=""
+                                value={this.state.dateOfBirth}
                                 onChange={this.handlePanCardChange}
                               />
                               <div>
@@ -343,7 +363,7 @@ class WithdrawVerification extends Component {
                                 className='form-control withdrawVerificationselectBox'
                                 id='exampleFormControlInput1'
                                 name='panNumber'
-                                placeholder={this.state.userBankDetails[0].pan_card_number}
+                                placeholder={userBankDetails.pan_card_number}
                                 onChange={this.handlePanCardChange}
                               />
                             </div>
@@ -445,7 +465,7 @@ class WithdrawVerification extends Component {
                                 id='exampleFormControlInput1'
                                 name='bankName'
                                 onChange={this.handleBankDetailsChange}
-                                placeholder={this.state.userBankDetails[0].bank_Name}
+                                placeholder={userBankDetails.bank_Name}
                               />
                             </div>
                           </div>
@@ -470,7 +490,7 @@ class WithdrawVerification extends Component {
                                 id='exampleFormControlInput1'
                                 name='bankBranchName'
                                 onChange={this.handleBankDetailsChange}
-                                placeholder={this.state.userBankDetails[0].bank_Branch_Name}
+                                placeholder={userBankDetails.bank_Branch_Name}
                               />
                             </div>
                           </div>
@@ -495,7 +515,7 @@ class WithdrawVerification extends Component {
                                 id='exampleFormControlInput1'
                                 name='accountNumber'
                                 onChange={this.handleBankDetailsChange}
-                                placeholder={this.state.userBankDetails[0].account_number}
+                                placeholder={userBankDetails.account_number}
                               />
                             </div>
                           </div>
@@ -520,7 +540,7 @@ class WithdrawVerification extends Component {
                                 id='exampleFormControlInput1'
                                 name='accountHolderName'
                                 onChange={this.handleBankDetailsChange}
-                                placeholder={this.state.userBankDetails[0].account_holder_name}
+                                placeholder={userBankDetails.account_holder_name}
                               />
                             </div>
                           </div>
@@ -545,7 +565,7 @@ class WithdrawVerification extends Component {
                                 id='exampleFormControlInput1'
                                 name='ifscCode'
                                 onChange={this.handleBankDetailsChange}
-                                placeholder={this.state.userBankDetails[0].ifsc_code}
+                                placeholder={userBankDetails.ifsc_code}
                               />
                             </div>
                           </div>

@@ -16,7 +16,7 @@ import { submitQuizReducer } from './submitQuizReducer';
 import { addMoneyReducer } from './addMoneyReducer'
 import { userAccountStatementReducer } from './accountStatementReducer'
 import { emailVerifyReducer } from './emailVeriFyReducer'
-import { withdrawMoneyReducer } from './withdrawMoneyReducer'
+import { withdrawMoneyReducer,withdrawErrorReducer } from './withdrawMoneyReducer'
 import { languageReducer } from './languageReducer'
 import { notificationReducer } from './notificationReducer'
 
@@ -44,5 +44,6 @@ export const reducers = combineReducers({
   withdrawMoney: withdrawMoneyReducer,
   language : languageReducer,
   notification:notificationReducer,
-  errorhandel: varificationErrorReducer
+  errorhandel: varificationErrorReducer,
+  withdrawError: withdrawErrorReducer
 })

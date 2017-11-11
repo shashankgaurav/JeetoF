@@ -105,18 +105,16 @@ export function * getBankDetails () {
   let headersdata = {
     Authorization: cookeiesdata.userdetailsStore.header.authorization
   }
+  console.log(headersdata)
   try {
     const response = yield call(
-      axios.post,
-      API_URL + 'v1/PlayerBankDetails',
-      {
-        master_players_id: cookeiesdata.userdetailsStore.master_players_id
-      },
+      axios.get,
+      API_URL + '/v1/PlayerBankDetails',
       { headers: headersdata }
     )
     if (
       response.data.messageCode === 'PBD001' ||
-      response.data.messageCode === 'PBD014'
+      response.data.messageCode === 'PBD012'
     ) {
       let bankDetailsData = response.data.data
       console.log("bank saga data",bankDetailsData)

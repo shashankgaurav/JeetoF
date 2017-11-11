@@ -49,7 +49,7 @@ class CardButton extends Component {
                        payEntryFeeJackpotshow:false,
                        payEntryFeeInsufficientBalanceshow:false,
                        quizId: 0,
-                       timeRemaining: 0,
+                       timeRemaining: moment('1900-01-01 00:00:00').add(0 / 1000, 'seconds').format('HH:mm:ss'),
                        isDisabled: true,
                        isStarted: true,
                        win:0
@@ -175,7 +175,6 @@ redirect = () => {
   }
 
    roomTypes = _.orderBy(_.filter(jeetomoneydata.jeetomoney.metadata.roomConfig[0].roomType, {entry_fee_in_Rs: parseInt(row)}), ['is_jackpot'], ['asc']);
-    console.log()
     numberOfWinners = roomTypes[win].number_of_winners;
     numberOfPlayers = roomTypes[win].number_of_players;
     numberOfVideos = roomTypes[win].number_of_videos_to_be_shown;
@@ -268,7 +267,6 @@ redirect = () => {
       if(jackpot[i]){
 
       let startDate = roomTypes[i].jackpot_start_time;
-      console.log(startDate);
       let expiryDate = roomTypes[i].jackpot_end_time;
       let currentTime = moment(); // .format('YYYY-MM-DD HH:mm:ss')
       expiryDate = moment(expiryDate, 'YYYY-MM-DD HH:mm:ss');
@@ -291,7 +289,6 @@ redirect = () => {
                 clearInterval(myVar)
               }
             }, 1000)
-            console.log(myVar);
           }
         }
       })
@@ -304,7 +301,6 @@ redirect = () => {
       // const roomTypes = _.filter(jeetomoneydata.jeetomoney.metadata.roomConfig[0].roomType, {entry_fee_in_Rs: parseInt(row)}, );
       const roomTypes = _.orderBy(_.filter(jeetomoneydata.jeetomoney.metadata.roomConfig[0].roomType, {entry_fee_in_Rs: parseInt(row)}), ['is_jackpot'], ['asc'])
       let jackpot = _.map(roomTypes, "is_jackpot");
-      console.log(jackpot);
       let states = []
       let winner = [];
       let player = [];
@@ -347,7 +343,6 @@ redirect = () => {
                                       </div>)
                   }else{
                 return (
-
                 <div className = "card">
                     <div className="cardButtonInnerDiv" id = {i} onClick={this.payEntryFeeDeduction}>
                         <div className='cardTopView' key = {i}>
@@ -363,10 +358,10 @@ redirect = () => {
                         <div className="questionMark" id = {i} onClick={ this.togglePopup }>
                           <img src={QuestionMark} />
                         </div>
-                </div>)} 
+                </div>)}
                 }else{
                   return (
-                <div className = {(cookeiesdata.userdetailsStore.firstUserExperience) ? "card card-disable" : "card"}>
+                <div className = {(cookeiesdata.userdetailsStore.firstUserExperience || (this.state.timeRemaining === "00:00:00")) ? "card card-disable" : "card"}>
                 <div className="jackpotButtonInnerDiv" id = {i} onClick={ this.payEntryFeeDeduction }>
                     <div className='cardTopView' key = {i}>
                       <div className="jeetoMoneyName">

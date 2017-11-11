@@ -1,16 +1,31 @@
-import {WITHDRAW_MONEY_REQUEST,WITHDRAW_MONEY_REQUEST_SUCCESS} from '../constants';
+import {
+  WITHDRAW_MONEY_REQUEST,
+  WITHDRAW_MONEY_REQUEST_SUCCESS,
+  FETCH_ERROR
+} from '../constants'
 
 export const withdrawMoneyReducer = (state = [], action) => {
   switch (action.type) {
     case 'WITHDRAW_MONEY_REQUEST':
-      console.log("with draw Reducer",action)
-      return action;
+      return action
 
     case 'WITHDRAW_MONEY_REQUEST_SUCCESS':
-      console.log("with draw saga response",action)
-      return action;
-      
-    default:
-      return state;
+      return action
+
+      default:
+      return state
   }
 }
+export const withdrawErrorReducer = (state = [], action) => {
+  console.log("in error reducer",action)
+  let users = []
+  switch (action.type) {
+    case 'FETCH_ERROR':
+    users = [action.error]
+    console.log(users)
+    return users
+
+      default:
+      return state
+  }
+}  

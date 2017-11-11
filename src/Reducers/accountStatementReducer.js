@@ -8,8 +8,8 @@ export const userAccountStatementReducer = (state = [], action) => {
       console.log("User Reducer",action)
       return action;
     case 'ACCOUNT_DATA':
-      console.log("User Reducer",action)
-      users=[...state,action]
+      console.log("User Reducer1",action)
+      users=[action]
       return users;
 
     default:
